@@ -1,0 +1,19 @@
+.parallax {
+	position: relative;
+	z-index: 1;
+	height: 450px;
+	-webkit-box-shadow: inset 0px -6px 5px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: inset 0px -6px 5px rgba(50, 50, 50, 0.75);
+	box-shadow: inset 0px -6px 5px rgba(50, 50, 50, 0.75);
+}
+
+.fixed-image {
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+}
