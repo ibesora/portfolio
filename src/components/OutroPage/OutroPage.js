@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './OutroPage.css';
+import styles from './OutroPage.module.css';
 
 class OutroPage extends Component {
 	render() {
 		return (
-			<div className="outro-page">
+			<div className={ styles.OutroPage }>
 				Outro!
 			</div>
 		);

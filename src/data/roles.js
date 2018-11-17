@@ -1,9 +1,9 @@
-import RoleData from './roleData.js'
+import BasicData from './basicData.js'
 
-const WebDeveloper = new RoleData(1, "Web developer");
-const LeadEngineer = new RoleData(2, "Lead engineer");
-const RenderingEngineer = new RoleData(3, "Rendering engineer");
-const AppDeveloper = new RoleData(4, "App developer");
-const FullStackDeveloper = new RoleData(5, "Full-Stack developer");
+const WebDeveloper = new BasicData(1, "Web developer");
+const LeadEngineer = new BasicData(2, "Lead engineer");
+const RenderingEngineer = new BasicData(3, "Rendering engineer");
+const AppDeveloper = new BasicData(4, "App developer");
+const FullStackDeveloper = new BasicData(5, "Full-Stack developer");
 
 export { WebDeveloper, LeadEngineer, RenderingEngineer, AppDeveloper, FullStackDeveloper };

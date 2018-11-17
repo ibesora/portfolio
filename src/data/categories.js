@@ -1,6 +1,9 @@
-const CG = 1;
-const Web = 2;
-const App = 3;
-const Other = 500;
+import CategoryData from './categoryData.js';
 
-export { CG, Web, App, Other };
+const CG = new CategoryData(1, "Computer graphics", "cg");
+const Web = new CategoryData(2, "Web development", "webdev");
+const WebApps = new CategoryData(2, "Web applications", "webapps");
+const App = new CategoryData(3, "App development", "app");
+const Other = new CategoryData(500, "Other", "other");
+
+export { CG, WebApps, App, Web, Other };

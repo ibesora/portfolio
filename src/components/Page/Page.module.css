@@ -7,7 +7,7 @@
 	box-shadow: inset 0px -6px 5px rgba(50, 50, 50, 0.75);
 }
 
-.fixed-image {
+.fixedImage {
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-position: center top;

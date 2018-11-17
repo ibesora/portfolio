@@ -1,4 +1,4 @@
-class RoleData {
+class BasicData {
 
 	constructor(id, name) {
 
@@ -9,4 +9,4 @@ class RoleData {
 
 }
 
-export default RoleData;
+export default BasicData;

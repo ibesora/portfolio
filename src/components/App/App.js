@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import * as data from '../../data/data.js';
-import './App.css';
+import Menu from '../Menu/Menu.js';
 import IntroPage from '../IntroPage/IntroPage.js';
 import OutroPage from '../OutroPage/OutroPage.js';
 import Page from '../Page/Page.js';
@@ -15,7 +15,8 @@ class App extends Component {
 
 	render() {
 		return (
-			<div className="App">
+			<div>
+				<Menu />
 				<IntroPage />
 				{ this.renderPages() }
 				<OutroPage />

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import './Logo.css';
+import styles from './Logo.module.css';
 
 class Logo extends Component {
 	render() {
 		return (
-			<div className="logo">
+			<div className={styles.logo}>
 				<a target="_blank" rel="noopener noreferrer" href={this.props.link}>
-					<img src={this.props.src} className="logo-image" alt={this.props.name} title={this.props.name} />
+					<img src={this.props.src} className={styles.logoImage} alt={this.props.name} title={this.props.name} />
 				</a>
 			</div>
 		);

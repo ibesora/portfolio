@@ -1,10 +1,11 @@
-class TechData {
+import BasicData from './basicData.js';
 
-	constructor(id, src, name, link) {
+class TechData extends BasicData {
 
-		this.key = id;
+	constructor(id, name, src, link) {
+		super(id, name);
+
 		this.src = src;
-		this.name = name;
 		this.link = link;
 
 	}

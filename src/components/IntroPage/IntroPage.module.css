@@ -1,0 +1,4 @@
+.introPage {
+	height: calc(100vh - 300px);
+	margin-top: 300px;
+}
