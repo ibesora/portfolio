@@ -6,7 +6,7 @@ import './PageContent.css';
 class PageContent extends Component {
 	render() {
 		return (
-			<div className="content">
+			<div className={ `content ${ this.props.isLast ? "isLast" : "" }` } >
 				<div className="title">{ this.props.title }</div>
 				<div className="type">{ this.props.category }</div>
 				{ this.renderRoles(this.props.roles) }

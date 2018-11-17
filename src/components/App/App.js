@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import * as data from '../../data/data.js';
 import './App.css';
 import IntroPage from '../IntroPage/IntroPage.js';
+import OutroPage from '../OutroPage/OutroPage.js';
 import Page from '../Page/Page.js';
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
 			<div className="App">
 				<IntroPage />
 				{ this.renderPages() }
+				<OutroPage />
 			</div>
 		);
 	}
@@ -26,6 +28,7 @@ class App extends Component {
 
 		for(let i=0; i<this.state.pages.length; ++i) {
 			const currentPage = this.state.pages[i];
+			currentPage.isLast = (i === this.state.pages.length - 1);
 			pages.push(<Page  { ...currentPage }/>);
 		}
 

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="198px" height="72.053px" viewBox="0 0 198 72.053" enable-background="new 0 0 198 72.053" xml:space="preserve">
+<rect x="83.417" y="57.719" fill="none" width="189.333" height="28.667"/>
+<text transform="matrix(1 0 0 1 83.417 62.1719)" fill="#010101" font-family="'Montserrat-SemiBold'" font-size="6" letter-spacing="2">SOFTWARE ENGINEER</text>
+<rect x="82.417" y="8.31" fill="none" width="305.261" height="60"/>
+<text transform="matrix(1 0 0 1 82.417 24.6338)"><tspan x="0" y="0" fill="#010101" font-family="'Montserrat-Bold'" font-size="22">ISAAC</tspan><tspan x="0" y="26" fill="#010101" font-family="'Montserrat-Bold'" font-size="22">BESORA</tspan></text>
+<g id="Frame">
+	<g>
+		<path fill="#010101" d="M64.473,5.36H5.767c-0.623,0-1.127,0.505-1.127,1.127v58.707c0,0.622,0.504,1.126,1.127,1.126h58.706
+			c0.623,0,1.127-0.504,1.127-1.126V6.487C65.6,5.865,65.095,5.36,64.473,5.36z M63.346,64.066H6.894V7.614h56.453V64.066z"/>
+	</g>
+</g>
+<rect x="33.207" y="42.953" fill="none" width="22.708" height="15.257"/>
+<text transform="matrix(1 0 0 1 42.1445 56.3086)" fill="#010101" font-family="'Montserrat-Bold'" font-size="18">B</text>
+<g id="Shlash">
+	<g>
+		<path fill="#010101" d="M55.077,16.359c-0.44-0.439-1.156-0.439-1.597,0L16.12,53.6c-0.441,0.439-0.441,1.151,0,1.591
+			c0.221,0.22,0.509,0.329,0.798,0.329s0.578-0.109,0.798-0.329l37.36-37.24C55.518,17.511,55.518,16.798,55.077,16.359z"/>
+	</g>
+</g>
+<rect x="15.232" y="14.453" fill="none" width="22.708" height="15.257"/>
+<text transform="matrix(1 0 0 1 15.2319 27.8091)" fill="#010101" font-family="'Montserrat-Bold'" font-size="18">I</text>
+</svg>
