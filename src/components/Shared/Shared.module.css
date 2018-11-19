@@ -18,10 +18,12 @@
     margin-left: auto;
 	margin-right: auto;
 	flex-wrap: wrap;
+	color: grey;
 }
 
 .title {
 	margin-left: 10px;
+	color: black;
 }
 
 .row {
