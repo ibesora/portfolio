@@ -16,7 +16,7 @@ class IntroPage extends Component {
 							<br />If I had to simplify, I would say that I am attracted to everything that presents a <b>challenge</b>. <br />It's this eagerness to challenge myself and to improve that has brought me to learn a vast array of technologies. I'm currently enrolled in a PhD degree focused in 3d city reconstruction from oblique images.</p>
 							<p>I also love <b>teaching</b>, something I discovered doing math and physics classes after I graduated, helping <b>others</b> and <b>growing</b>, both professionally and personally, with my teammates. Oh, and if it's not evident enough from the header image, I also love mountains and everything that's commonly associated with them: snow, skiing, hiking, ...</p>
 							<p></p>
-							<p>On this website, you'll find some of the projects I've been involved with in no concrete order. Don't hesitate to get in touch at isaac(dot)besora(at)gmail(dot)com if you need more information about a project or just want to talk :P</p>
+							<p>On this website, you'll find some of the projects I've been involved with in no concrete order. Don't hesitate to get in touch at isaac(dot)besora(at)gmail(dot)com if you want more information about a project or just want to talk :P</p>
 						</div>
 					</div>
 					<div className={ `${SharedStyles.row} ${SharedStyles.alignRight}` }>
