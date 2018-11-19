@@ -22,20 +22,20 @@ class Menu extends Component {
 				definitiveURL: "/files/header570.jpg"
 			}
 		];
-		this.state = { srcSet, alt: "background" };
+		this.state = { srcSet, alt: "background", collapseMenu: false };
 	}
 	render() {
 		return (
-			<div>
-				<ResponsivePicture pictureClass={ styles.header } imgClass={ styles.backgroundImage } 
+			<div className = { `${styles.animated} ${styles.outer} ${this.state.collapseMenu ? `${styles.collapsed} ${styles.absolute}` : '' }`}>
+				<ResponsivePicture pictureClass={ styles.header } imgClass={ `${styles.backgroundImage} ${this.state.collapseMenu ? styles.collapsed : ''}` } 
 					sources={ this.state.srcSet } alt={this.state.alt} />
 				<div className={ styles.logoContainer }>
-					<img alt="logo" src="/files/logos/logo.svg" className={ styles.logo }></img>
+					<img alt="logo" src="/files/logos/logo.svg" className={ `${styles.logo} ${styles.animated} ${this.state.collapseMenu ? styles.collapsed : ''}` }></img>
 				</div>
 				<nav>
-					<div className={ `${styles.menuContainer} ${styles.navWide}` }>{ this.renderNavItems() }</div>
-					<div className={ `${styles.menuContainer} ${styles.navNarrow}` }>
-						<i className="fa fa-bars fa-2x" onClick={this.burgerToggle}></i>
+					<div className={ `${styles.menuContainer} ${styles.animated} ${styles.navWide} ${this.state.collapseMenu ? styles.collapsed : ''}` }>{ this.renderNavItems() }</div>
+					<div className={ `${styles.menuContainer} ${styles.animated} ${styles.navNarrow} ${this.state.collapseMenu ? styles.collapsed : ''}` }>
+						<i className={`fa fa-bars fa-2x ${this.state.collapseMenu ? styles.burguerRight : ''}`} onClick={this.burgerToggle}></i>
 						<div className={styles.navNarrowLinks}>
 							{ this.renderNavItems() }
 						</div>
@@ -47,7 +47,7 @@ class Menu extends Component {
 
 	renderNavItems() {
 		let index = 0;
-		const navs = [<div key={ index }className={ styles.menuItem }><a href="#all">All</a></div>];
+		const navs = [<div key={ index } className={ styles.menuItem }><a href="#all">All</a></div>];
 		for(let categoryName in Categories) {
 			index++;
 			navs.push(<div key={ index } className={ styles.menuItem }><a href={`#${Categories[categoryName].link}`}>{Categories[categoryName].name}</a></div>);
@@ -62,6 +62,21 @@ class Menu extends Component {
 		} else {
 			linksEl.style.display = 'block';
 		}
+	}
+
+	componentDidMount() {
+		document.addEventListener("scroll", this.scroll.bind(this));
+		this.introPage = document.getElementById("introPage");
+	}
+
+	scroll() {
+		let shouldCollapse = false;
+		if(window.scrollY > (this.introPage.offsetTop + this.introPage.offsetHeight - 300)) {
+			shouldCollapse = true;
+		}
+		
+		this.setState(() => { return { collapseMenu: shouldCollapse } });
+
 	}
 
 }

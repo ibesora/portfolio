@@ -10,15 +10,13 @@ class ResponsivePicture extends Component {
 
 	render() {
 		return (
-			<div>
-				<picture className={ this.props.pictureClass }>
-					{ 
-						this.state.dataLoaded ? 
-							this.renderDefinitiveContents() :
-							this.renderTemporalContents() 
-					}
-				</picture>
-			</div>
+			<picture className={ this.props.pictureClass }>
+				{ 
+					this.state.dataLoaded ? 
+						this.renderDefinitiveContents() :
+						this.renderTemporalContents() 
+				}
+			</picture>
 		);
 	}
 

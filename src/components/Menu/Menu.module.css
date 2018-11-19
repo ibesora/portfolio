@@ -1,5 +1,24 @@
-.header {
+.outer.collapsed {
+	height: 100px;
+}
+
+.absolute {
+	position: absolute;
+	z-index: 3;
+}
+
+.animated {
+	transition: .7s all;
+	-moz-transition: .7s all;
+	-webkit-transition: .7s all;
+	-o-transition: .7s all;
+}
+
+.outer {
 	height: 300px;
+}
+
+.header {
 	position: fixed;
 	top: 0px;
 	width: 100%;
@@ -9,11 +28,19 @@
 	height: 300px;
 }
 
+.backgroundImage.collapsed {
+	clip-path: inset(0px 0px 200px 0px);
+}
+
 .logo {
 	height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    margin-left: calc(50% - 250px);
+	display: block;
+}
+
+.logo.collapsed {
+	height: 80px;
+	margin-left: initial;
 }
 
 .logoContainer {
@@ -29,6 +56,17 @@
     display: flex;
 	width: 100%;
 	text-align: center;
+}
+
+.menuContainer.collapsed {
+	top: 50px;
+	width: calc(100% - 220px);
+	left: 230px;
+}
+
+.burguerRight {
+	float: right;
+    margin-right: 30px;
 }
 
 .menuItem {
@@ -54,12 +92,22 @@
 	display: none;
 }
 
-@media (max-width: 800px) {
-	.navWide {
+@media (max-width: 940px) {
+	.navWide :not(.collapsed) {
 		display: none;
 	}
 	
-	.navNarrow {
+	.navNarrow :not(.collapsed) {
+		display: block;
+	}
+}
+
+@media (max-width: 1200px) {
+	.navWide.collapsed {
+		display: none;
+	}
+	
+	.navNarrow.collapsed {
 		display: block;
 	}
 }
