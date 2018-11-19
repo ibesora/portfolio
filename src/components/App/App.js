@@ -5,6 +5,9 @@ import IntroPage from '../IntroPage/IntroPage.js';
 import OutroPage from '../OutroPage/OutroPage.js';
 import Page from '../Page/Page.js';
 
+
+import ScrollingArrowStyle from '../Shared/ScrollingArrow.module.css';
+
 class App extends Component {
 	constructor(props) {
 
@@ -20,6 +23,7 @@ class App extends Component {
 				<IntroPage />
 				{ this.renderPages() }
 				<OutroPage />
+				<div className={ ScrollingArrowStyle.scrollDownArrow }></div>
 			</div>
 		);
 	}

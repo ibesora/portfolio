@@ -22,6 +22,12 @@
 	position: fixed;
 	top: 0px;
 	width: 100%;
+	border-bottom: 5px solid #d9e762;
+	height: 300px;
+}
+
+.collapsed > .header {
+	height: 100px !important;
 }
 
 .backgroundImage {

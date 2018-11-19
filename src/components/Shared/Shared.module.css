@@ -1,0 +1,72 @@
+.avatar {
+	border-radius: 3px;
+    display: inline-block;
+    line-height: 1;
+    overflow: hidden;
+	vertical-align: middle;
+	min-width: 200px;
+	height: 200px; 
+}
+
+.rounded {
+	border-radius: 6px!important;
+}
+
+.section {
+	margin: 10px;
+    width: 70%;
+    margin-left: auto;
+	margin-right: auto;
+	flex-wrap: wrap;
+}
+
+.title {
+	margin-left: 10px;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.col1 {
+	flex-grow: 1;
+	margin: 10px;
+}
+
+.col2 {
+	flex-grow: 2;
+	margin: 10px;
+}
+
+.col3 {
+	flex-grow: 3;
+	margin: 10px;
+}
+
+.justifyRight {
+	justify-content: right;
+}
+
+.largeImage {
+	width: 400px;
+}
+
+.floatRight {
+	float: right;
+}
+
+.alignRight {
+	text-align: right;
+}
+
+.attribution {
+	text-align: right;
+	font-style: italic;
+	font-size: smaller;
+}
+
+.fullWidth {
+	width: 100%;
+}
