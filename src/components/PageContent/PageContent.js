@@ -13,7 +13,9 @@ class PageContent extends Component {
 					<h1 className={ SharedStyles.title }>{ this.props.title }</h1>
 					{ this.renderCategories(this.props.categories) }
 					{ this.renderRoles(this.props.roles) }
-					{ this.props.children }
+					<div className={ SharedStyles.leftMargin }>
+						{ this.props.children }
+					</div>
 					<div className={ styles.techs }>
 						{ this.renderUsedTechs(this.props.techUsed) }
 					</div>
