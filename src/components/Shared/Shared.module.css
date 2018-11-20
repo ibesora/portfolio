@@ -73,3 +73,15 @@
 .fullWidth {
 	width: 100%;
 }
+
+.display {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+.grey {
+	background-color: grey;
+}

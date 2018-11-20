@@ -2,18 +2,21 @@ import React, { Component } from 'react';
 import Category from '../Category/Category.js';
 import Role from '../Role/Role.js';
 import Logo from '../Logo/Logo.js';
+import SharedStyles from '../Shared/Shared.module.css';
 import styles from './PageContent.module.css';
 
 class PageContent extends Component {
 	render() {
 		return (
 			<div className={ `${styles.content} ${ this.props.isLast ? styles.isLast : "" }` } >
-				<div className={ styles.title }>{ this.props.title }</div>
-				{ this.renderCategories(this.props.categories) }
-				{ this.renderRoles(this.props.roles) }
-				<div className={ styles.text }>{ this.props.description }</div>
-				<div className={ styles.techs }>
-					{ this.renderUsedTechs(this.props.techUsed) }
+				<div className={SharedStyles.section}>
+					<h1 className={ SharedStyles.title }>{ this.props.title }</h1>
+					{ this.renderCategories(this.props.categories) }
+					{ this.renderRoles(this.props.roles) }
+					{ this.props.children }
+					<div className={ styles.techs }>
+						{ this.renderUsedTechs(this.props.techUsed) }
+					</div>
 				</div>
 			</div>
 		);

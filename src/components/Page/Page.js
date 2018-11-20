@@ -8,7 +8,9 @@ class Page extends Component {
 			<div>
 				<div className={ ` ${styles.parallax} ${styles.fixedImage}` }  id={ `page-${ this.props.id }`} style={{backgroundImage: `url("${ this.props.temporaryImage }")`}}>
 				</div>
-				<PageContent {...this.props}/>
+				<PageContent {...this.props}>
+					{this.props.children}
+				</PageContent>
 			</div>
 		);
 	}

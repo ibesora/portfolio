@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import * as data from '../../data/data.js';
 import Menu from '../Menu/Menu.js';
 import IntroPage from '../IntroPage/IntroPage.js';
+import MainContent from '../MainContent/MainContent.js';
 import OutroPage from '../OutroPage/OutroPage.js';
-import Page from '../Page/Page.js';
 
-
+import Shared from '../Shared/Shared.module.css';
 import ScrollingArrowStyle from '../Shared/ScrollingArrow.module.css';
 
 class App extends Component {
 	constructor(props) {
 
 		super(props);
-		this.state = { pages: data.Pages };
+		this.state = {showScrollArrow: true};
 
 	}
 
@@ -21,23 +20,26 @@ class App extends Component {
 			<div>
 				<Menu />
 				<IntroPage />
-				{ this.renderPages() }
+				<MainContent />
 				<OutroPage />
-				<div className={ ScrollingArrowStyle.scrollDownArrow }></div>
+				<div className={ `${ScrollingArrowStyle.scrollDownArrow} ${this.state.showScrollArrow ? Shared.display : Shared.hide }` }></div>
 			</div>
 		);
 	}
 
-	renderPages() {
-		let pages = [];
+	componentDidMount() {
+		document.addEventListener("scroll", this.scroll.bind(this));
+	}
 
-		for(let i=0; i<this.state.pages.length; ++i) {
-			const currentPage = this.state.pages[i];
-			currentPage.isLast = (i === this.state.pages.length - 1);
-			pages.push(<Page  { ...currentPage }/>);
+	scroll() {
+		let shouldShowScrollArrow = true;
+
+		if((window.scrollY + window.innerHeight) >= document.body.scrollHeight) {
+			shouldShowScrollArrow = false;
 		}
+		
+		this.setState(() => { return { showScrollArrow: shouldShowScrollArrow } });
 
-		return pages;
 	}
 }
 
