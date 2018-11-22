@@ -23,3 +23,7 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+
+.techText {
+	margin-top: 55px;
+}

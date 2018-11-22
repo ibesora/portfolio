@@ -11,12 +11,16 @@ class PageContent extends Component {
 			<div className={ `${styles.content} ${ this.props.isLast ? styles.isLast : "" }` } >
 				<div className={SharedStyles.section}>
 					<h1 className={ SharedStyles.title }>{ this.props.title }</h1>
-					{ this.renderCategories(this.props.categories) }
-					{ this.renderRoles(this.props.roles) }
+					<div className={ SharedStyles.leftMargin}> 
+						<b>{ `${this.props.roles.length > 1 ? "Roles" : "Role"} ` }<i className={`fa fa-long-arrow-right ${SharedStyles.leftMargin}`} aria-hidden="true"></i></b>
+						{ this.renderRoles(this.props.roles) } 
+					</div>
 					<div className={ SharedStyles.leftMargin }>
 						{ this.props.children }
 					</div>
-					<div className={ styles.techs }>
+					<div className={ `${styles.techs} ${SharedStyles.leftMargin}` }>
+						<b className={ styles.techText }> Technologies used in this project <i className={`fa fa-long-arrow-right ${SharedStyles.leftMargin}`} aria-hidden="true"></i> </b>
+						<br />
 						{ this.renderUsedTechs(this.props.techUsed) }
 					</div>
 				</div>

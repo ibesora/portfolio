@@ -7,7 +7,7 @@ class IntroPage extends Component {
 		return (
 			<div id="introPage" className={ styles.introPage }>
 				<div className={ SharedStyles.section }>
-					<h1 className={ SharedStyles.title }>A complete-and-up-to-date list of things I've worked on*</h1>
+					<h1 className={ `${SharedStyles.title} ${SharedStyles.marginTop40}` }>A complete-and-up-to-date list of things I've worked on*</h1>
 					<div className={ SharedStyles.row }>
 						<img className={ `${ SharedStyles.avatar } ${ SharedStyles.rounded} ${SharedStyles.col1}` } src="/files/me.jpg" alt="me" title="me"></img>
 						<div className= { SharedStyles.col3 }>
