@@ -4,7 +4,7 @@ class ResponsivePicture extends Component {
 	constructor(props) {
 
 		super(props);
-		this.state = { dataLoaded: false };
+		this.state = { dataLoaded: false, fullWidth: true };
 
 	}
 
@@ -22,7 +22,7 @@ class ResponsivePicture extends Component {
 
 	renderTemporalContents() {
 
-		return this.renderContents("temporalURL", true);
+		return this.renderContents("temporalURL");
 
 	}
 
@@ -30,7 +30,7 @@ class ResponsivePicture extends Component {
 		return this.renderContents("definitiveURL");
 	}
 
-	renderContents(imageDataKey, mustGrow){
+	renderContents(imageDataKey){
 		const contents = [];
 		const last = this.props.sources[this.props.sources.length -1];
 
@@ -49,17 +49,20 @@ class ResponsivePicture extends Component {
 				src={ last[imageDataKey] } 
 				className={this.props.imgClass} 
 				alt={this.props.alt}
-				style={ mustGrow ? {width:"100%"} : {}} 
+				style={ this.state.fullWidth ? {width:"100%"} : {}} 
+				onLoad= { () => this.imageLoaded() }
 			/>);
 
 		return contents;
 	}
 
-	componentDidMount() {
-		// We change the state after a small delay so React doesn't optimize the change out
-		setTimeout(() => {
+	imageLoaded() {
+
+		if(!this.state.dataLoaded)
 			this.setState(() => { return { dataLoaded: true } });
-		}, 100);
+		else
+			this.setState(() => { return { fullWidth: false } });
+
 	}
 
 }

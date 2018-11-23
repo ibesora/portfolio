@@ -1,4 +1,4 @@
 .introPage {
 	min-height: calc(100vh - 300px);
-	border-bottom: 5px solid red;
+	border-bottom: 5px solid var(--tertiary-color);
 }

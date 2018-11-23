@@ -22,7 +22,7 @@
 	position: fixed;
 	top: 0px;
 	width: 100%;
-	border-bottom: 5px solid #d9e762;
+	border-bottom: 5px solid var(--primary-color);
 	height: 300px;
 }
 
@@ -84,6 +84,7 @@
 .menuItem > a {
 	text-decoration: none;
 	color: black;
+	font-family: Karla, sans-serif;
 }
 
 .navWide {
