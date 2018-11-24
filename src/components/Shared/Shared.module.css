@@ -74,6 +74,10 @@
 	text-align: right;
 }
 
+.alignCenter {
+	text-align: center;
+}
+
 .imageText {
 	text-align: right;
 	font-style: italic;

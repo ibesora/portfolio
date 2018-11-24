@@ -9,20 +9,20 @@ class OutroPage extends Component {
 			<div className={ `${styles.outroPage} ${SharedStyles.grey}` }>
 				<div className={ SharedStyles.section }>
 					<div className={ SharedStyles.row }>
-						<div className= { SharedStyles.col1 }>
-							<a href="mailto:isaac.besora@gmail.com" title="Write me an email"><i className="fa fa-3x fa-at"></i></a>
+						<div className= { `${SharedStyles.col1} ${SharedStyles.alignCenter}` }>
+							<a href="mailto:isaac.besora@gmail.com" title="Write me an email"><i className="fa fa-2x fa-at"></i></a>
 						</div>
-						<div className= { SharedStyles.col1 }>
-							<a href="https://www.twitter.com/ibesora" target="_blank" rel="noopener noreferrer" title="Follow me on Twitter"><i className="fa fa-3x fa-twitter"></i></a>
+						<div className= { `${SharedStyles.col1} ${SharedStyles.alignCenter}` }>
+							<a href="https://www.twitter.com/ibesora" target="_blank" rel="noopener noreferrer" title="Follow me on Twitter"><i className="fa fa-2x fa-twitter"></i></a>
 						</div>
-						<div className= { SharedStyles.col1 }>
-							<a href="https://www.github.com/ibesora" target="_blank" rel="noopener noreferrer" title="Take a look at my projects on Github"><i className="fa fa-3x fa-github"></i></a>
+						<div className= { `${SharedStyles.col1} ${SharedStyles.alignCenter}` }>
+							<a href="https://www.github.com/ibesora" target="_blank" rel="noopener noreferrer" title="Take a look at my projects on Github"><i className="fa fa-2x fa-github"></i></a>
 						</div>
-						<div className= { SharedStyles.col1 }>
-							<a href="https://www.linkedin.com/in/ibesora/" target="_blank" rel="noopener noreferrer" title="Connect with me on Linkedin"><i className="fa fa-3x fa-linkedin"></i></a>
+						<div className= { `${SharedStyles.col1} ${SharedStyles.alignCenter}` }>
+							<a href="https://www.linkedin.com/in/ibesora/" target="_blank" rel="noopener noreferrer" title="Connect with me on Linkedin"><i className="fa fa-2x fa-linkedin"></i></a>
 						</div>
-						<div className= { SharedStyles.col1 }>
-							<a href="#download" target="_blank" rel="noopener noreferrer" title="Download my curriculum vitae"><i className="fa fa-3x fa-download"></i></a>
+						<div className= { `${SharedStyles.col1} ${SharedStyles.alignCenter}` }>
+							<a href="#download" target="_blank" rel="noopener noreferrer" title="Download my curriculum vitae"><i className="fa fa-2x fa-download"></i></a>
 						</div>
 					</div>
 				</div>
