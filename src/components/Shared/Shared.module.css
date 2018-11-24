@@ -31,6 +31,16 @@
 .row {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: baseline;
+}
+
+.alignTop {
+	align-items: start;
+}
+
+.nowrap {
+	flex-wrap: nowrap;
 }
 
 .col1 {
@@ -64,10 +74,14 @@
 	text-align: right;
 }
 
-.attribution {
+.imageText {
 	text-align: right;
 	font-style: italic;
 	font-size: smaller;
+}
+
+.smallWidth {
+	width: 400px;
 }
 
 .fullWidth {
@@ -92,6 +106,14 @@
 
 .leftMargin {
 	margin-left: 10px;
+}
+
+.leftMarginAuto {
+	margin-left: auto;
+}
+
+.rightMarginAuto {
+	margin-right: auto;
 }
 
 .noTopMargin {
