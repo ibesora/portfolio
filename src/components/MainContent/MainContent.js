@@ -72,6 +72,7 @@ class MainContent extends Component {
 					<p>This project was developed by the <Link href="https://www.virvig.eu">ViRVIG</Link> research group and was aimed at <b>developing a high-end graphics software</b> for the collaborative design of very large models.</p>
 					<p>The project included the development of a <b>custom rendering engine</b> to view very large models with the detail needed by the naval industry. You could inspect every aspect of a tanker before being built by traversing the entire ship, check collisions between elements (to see if they would fit through a door for example) and even get the serial number and specifications of every little screw used by selecting it on the renderer.</p>
 					<p>The main effort of this project was to develop and implement an algorithm to efficiently <b>draw a very large number of triangles</b> and interact with them: moving objects and <b>checking collisions</b>, <b>changing its material attributes</b>, <b>making objects transparent</b> and <b>adding/removing lights</b>.</p>
+					<p>I was on the team responsible of the <b>custom renderer</b> development.</p>
 					<p>More information about the technical aspects of this project can be found on the following scientific papers:</p>
 					<ul>
 						<li><Paper title="Interactive inspection of complex multi-object industrial assemblies" journal="Computer-Aided Design Volume 79, October 2016, Pages 48–59" url="https://dl.acm.org/citation.cfm?id=2994685.2994836" /></li>
@@ -100,10 +101,48 @@ class MainContent extends Component {
 					</div>
 				</Page>
 				<Page isLast={false} {...data.Pages[3]}>
-					Descripció 4
+					<p>This project consisted in the development of a <b>B2B cloud application</b> used to manage sport centers. It was the main product of the software division of <b>Alter Sport</b>, a small startup some colleagues and me founded that created sports-related software and managed a number of sport centers.</p>
+					<p>It was composed by the following components:</p>
+					<ul>
+						<li>A member-facing website where users could <b>book classes</b>, <b>communicate with their trainers</b>, <b>manage their billing data</b>, <b>view, print and review their training plans</b> and <b>see the log of trainings and classes they had done on the sport center</b> or <b>outside it</b>. The website also included <b>social network features</b>: members had access to a central facebook-like wall where they could <b>see and comment</b> other member activities.</li>
+						<li>A class booking system that was embeddable in other websites so members of a sport center could <b>book a class</b> without leaving the sport center website.</li>
+						<li>A smartphone application that members could use to <b>see the sport center schedule</b>, <b>book classes</b>, <b>follow their trainings</b> and <b>give feedback of each individual exercise on a training plan</b>.</li>
+						<li>An access control system made up of a Raspberry Pi and a touch screen that connected to our cloud application so we could <b>measure the time spent by each user at the sport center</b>, <b>check if they were paying the correct membership</b> and <b>record the assistance to a given class</b>.</li>
+						<li>A trainer-facing website that was used to <b>create training plans</b>, <b>assign them to members</b>, <b>change their schedules</b> and <b>read member feedback about their classes and training plans</b>.</li>
+						<li>A manager-facing website that was used to <b>configure their data on the platform</b>, to <b>extract reports about their members and financials (both current and historical)</b> and to <b>order bank invoices for each member</b>.</li>
+						<li>An admin-facing website that was used to <b>configure all the parameters of the system</b>.</li>
+						<li>A developer-facing website were all the <b>documentation was stored</b> and the <b>API calls could be tested</b>.</li>
+					</ul>
+					<p>I was responsible of the <b>architecture definition</b>, <b>led the development team</b> and was the <b>main back-end programmer on most of the components</b> although I also did some <b>front-end development</b>.</p>
+					<div className={ SharedStyles.row }>
+						<div className= { SharedStyles.col1 }>
+							<ImageWithText  
+									source="/files/web/af2.jpg" alt="Member-facing website" 
+									text="The member-facing website's sport center wall." />
+						</div>
+						<div className= { SharedStyles.col1 }>
+							<ImageWithText  
+									source="/files/web/af1.jpg" alt="Trainer-facing website" 
+									text="The trainer-facing website's training plan creation." />
+						</div>
+					</div>
 				</Page>
 				<Page isLast={false} {...data.Pages[4]}>
-					Descripció 3
+					<p>This project was comissioned by the Berga city council and consisted in the development of a <b>web platform</b> and a <b>smartphone app</b> to promote active tourism in the city. </p>
+
+					<p>I was responsible of the <b>architecture definition</b>, <b>led the development team</b> and was the <b>main full-stack and Android app programmer</b>.</p>
+					<div className={ SharedStyles.row }>
+						<div className= { SharedStyles.col1 }>
+							<ImageWithText  
+									source="/files/web/af2.jpg" alt="Member-facing website" 
+									text="The member-facing website's sport center wall." />
+						</div>
+						<div className= { SharedStyles.col1 }>
+							<ImageWithText  
+									source="/files/web/af1.jpg" alt="Trainer-facing website" 
+									text="The trainer-facing website's training plan creation." />
+						</div>
+					</div>
 				</Page>
 				<Page isLast={false} {...data.Pages[5]}>
 					Descripció 5

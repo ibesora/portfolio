@@ -50,12 +50,12 @@ const Page3 = createPageData( 3, "BAIP 2020", "baip", temporalImages,
 	[Categories.CG]
 );
 
-const Page4 = createPageData( 4, "Alter Fitness", "header", temporalImages,
-	[ Techs.AWS, Techs.JS, Techs.HTML5, Techs.CSS3, Techs.PHP, Techs.MySQL ], [ Roles.LeadEngineer ], 
+const Page4 = createPageData( 4, "Alter Fitness", "af", temporalImages,
+	[ Techs.AWS, Techs.JS, Techs.HTML5, Techs.CSS3, Techs.PHP, Techs.MySQL, Techs.RaspberryPi ], [ Roles.LeadEngineer ], 
 	[Categories.WebApps]
 );
 
-const Page5 = createPageData( 5, "Berga Activa", "header", temporalImages,
+const Page5 = createPageData( 5, "Berga Activa", "ba", temporalImages,
 	[Techs.JS, Techs.HTML5, Techs.CSS3, Techs.Laravel, Techs.MySQL, Techs.Android, Techs.IOS ], [ Roles.LeadEngineer ], 
 	[Categories.WebApps, Categories.App]
 );
@@ -88,7 +88,7 @@ const Page10 = createPageData( 10, "Websites", "header", temporalImages,
 
 //Access control, 3d spinning, vector tile optimizer, algorithms, apunts i projectes deep learning, aquesta web (incidència amb la velocitat i el pes)
 const Page11 = createPageData( 11, "Minor and ongoing projects", "header", temporalImages,
-	[Techs.RaspberryPi, Techs.Arduino, Techs.NodeJS, Techs.Keras, Techs.Tensorflow ], [ Roles.FullStackDeveloper ], 
+	[Techs.Arduino, Techs.NodeJS, Techs.Keras, Techs.Tensorflow ], [ Roles.FullStackDeveloper ], 
 	[Categories.Other]
 );
 
