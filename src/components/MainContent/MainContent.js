@@ -128,19 +128,27 @@ class MainContent extends Component {
 					</div>
 				</Page>
 				<Page isLast={false} {...data.Pages[4]}>
-					<p>This project was comissioned by the Berga city council and consisted in the development of a <b>web platform</b> and a <b>smartphone app</b> to promote active tourism in the city. </p>
-
+					<p>This project was comissioned by the Berga city council and consisted in the development of a <b>web platform</b> and <b>smartphone apps</b> to promote active tourism in the city.</p>
+					<p>Four actors converged on the platform: <b>sport clubs</b>, <b>sport shops</b>, the <b>city council</b> and <b>tourists</b>.</p>
+					<ul>
+						<li><b>Sport clubs</b> had their own <b>profile</b> where they could <b>change their information</b>, <b>create events</b> to go to the centralized city agenda and <b>add routes</b>.</li>
+						<li><b>Sport shops</b> also had their own <b>profile</b> and they could <b>change the information about their shops</b> and the <b>services</b> they offered.</li>
+						<li>The <b>city council</b> could <b>add events to the city agenda</b>, <b>add city landmarks</b> for the tourists to visit, <b>add places where each sport could be practiced</b> and add <b>routes</b> in different sports for the tourists to follow.</li>
+						<li><b>Tourists</b> could <b>search for landmarks near their position</b>, <b>businesses who solve a given problem they might have</b> (i.e. bike repairing) and <b>places where to practice their preferred sport</b>, <b>view routes in 2D and 3D</b> and access their own profile where they could <b>see all the routes they had followed and the places they had visited</b>. In addition to that, they could, using the smartphone application, <b>follow a given route</b> - with alerts when going outside the track or going nearby a landmark- and <b>localize the sport clubs, events, landmarks, etc. via an Augmented Reality solution done in-house</b>.</li>
+					</ul>
+					<p>There was a <b>gamification</b> layer built on top of it with <b>rankings by time on each route</b>, <b>higher number of places visited</b>, <b>badges to unlock</b> after some requirements were met and a <b>leveling system that promoted visiting landmarks</b>. The <b>smartphone app</b> included what we called <i>ghost mode</i> where users could <b>compete with their times or against others</b> while following a route.</p>
+					<p>An interesting functionality was that <b>when a route was added it was processed and its characteristics (elevation gain, circularity, distance, travel time, ... ) and nearby landmarks were computed automatically</b>.</p>
 					<p>I was responsible of the <b>architecture definition</b>, <b>led the development team</b> and was the <b>main full-stack and Android app programmer</b>.</p>
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/af2.jpg" alt="Member-facing website" 
-									text="The member-facing website's sport center wall." />
+									source="/files/web/ba3.jpg" alt="Partial view of a route information" 
+									text="Partial view of a route information. On the right you can see the time it would take to follow this route depending on which kind of user you are and the route characteristics." />
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/af1.jpg" alt="Trainer-facing website" 
-									text="The trainer-facing website's training plan creation." />
+									source="/files/web/ba2.jpg" alt="Landmarks view" 
+									text="The landmarks view screen" />
 						</div>
 					</div>
 				</Page>
