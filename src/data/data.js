@@ -51,21 +51,21 @@ const Page3 = createPageData( 3, "BAIP 2020", "baip", temporalImages,
 );
 
 const Page4 = createPageData( 4, "Alter Fitness", "af", temporalImages,
-	[ Techs.AWS, Techs.JS, Techs.HTML5, Techs.CSS3, Techs.PHP, Techs.MySQL, Techs.RaspberryPi ], [ Roles.LeadEngineer ], 
+	[ Techs.AWS, Techs.JS, Techs.HTML5, Techs.CSS3, Techs.PHP, Techs.MySQL, Techs.RaspberryPi ], [ Roles.LeadEngineer, Roles.FullStackDeveloper ], 
 	[Categories.WebApps]
 );
 
 const Page5 = createPageData( 5, "Berga Activa", "ba", temporalImages,
-	[Techs.JS, Techs.HTML5, Techs.CSS3, Techs.Laravel, Techs.MySQL, Techs.Android, Techs.IOS ], [ Roles.LeadEngineer ], 
+	[Techs.JS, Techs.HTML5, Techs.CSS3, Techs.Laravel, Techs.MySQL, Techs.Android, Techs.IOS ], [ Roles.LeadEngineer, Roles.FullStackDeveloper, Roles.AppDeveloper ], 
 	[Categories.WebApps, Categories.App]
 );
 
-const Page6 = createPageData( 6, "IASTracker", "header", temporalImages,
-	[Techs.JS, Techs.HTML5, Techs.CSS3, Techs.Laravel, Techs.PostgreSQL, Techs.Cordova, Techs.Leaflet ], [ Roles.LeadEngineer ], 
+const Page6 = createPageData( 6, "IASTracker", "iastracker", temporalImages,
+	[Techs.JS, Techs.HTML5, Techs.CSS3, Techs.Laravel, Techs.PostgreSQL, Techs.Cordova, Techs.Leaflet ], [ Roles.LeadEngineer, Roles.FullStackDeveloper, Roles.AppDeveloper ], 
 	[Categories.WebApps, Categories.App]
 );
 
-const Page7 = createPageData( 7, "City vibes", "header", temporalImages,
+const Page7 = createPageData( 7, "City vibes", "cv", temporalImages,
 	[Techs.JS, Techs.HTML5, Techs.CSS3, Techs.Python, Techs.Cordova, Techs.Leaflet ], [ Roles.AppDeveloper ], 
 	[Categories.App]
 );
