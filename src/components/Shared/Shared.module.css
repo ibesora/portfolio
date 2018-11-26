@@ -43,6 +43,14 @@
 	flex-wrap: nowrap;
 }
 
+.flex {
+	display: flex;
+}
+
+.justifyCenter {
+	justify-content: center;
+}
+
 .col1 {
 	flex-grow: 1;
 	margin: 10px;

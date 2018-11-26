@@ -70,8 +70,8 @@ const Page7 = createPageData( 7, "City vibes", "cv", temporalImages,
 	[Categories.App]
 );
 
-const Page8 = createPageData( 8, "Instamaps, Storymaps and prototypes", "header", temporalImages,
-	[Techs.JS, Techs.HTML5, Techs.CSS3, Techs.Leaflet, Techs.Mapbox, Techs.PostgreSQL, Techs.NodeJS ], [ Roles.FullStackDeveloper ], 
+const Page8 = createPageData( 8, "Instamaps, Storymaps and prototypes", "instamaps", temporalImages,
+	[Techs.JS, Techs.HTML5, Techs.CSS3, Techs.Leaflet, Techs.Mapbox, Techs.PostgreSQL, Techs.NodeJS, Techs.Unity, Techs.React ], [ Roles.FullStackDeveloper, Roles.AppDeveloper ], 
 	[Categories.WebApps]
 );
 

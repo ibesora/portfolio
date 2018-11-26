@@ -19,9 +19,10 @@ class PageContent extends Component {
 						{ this.props.children }
 					</div>
 					<div className={ `${styles.techs} ${SharedStyles.leftMargin}` }>
-						<b className={ styles.techText }> Technologies used in this project <i className={`fa fa-long-arrow-right ${SharedStyles.leftMargin}`} aria-hidden="true"></i> </b>
-						<br />
+						<b className={ styles.techText }> Technologies used in this project </b>
+						<div className={ `${SharedStyles.flex} ${SharedStyles.justifyCenter}` }>
 						{ this.renderUsedTechs(this.props.techUsed) }
+						</div>
 					</div>
 				</div>
 			</div>
