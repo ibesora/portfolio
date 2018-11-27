@@ -12,7 +12,7 @@ function createPageData(key, title, baseImageName, temporalImages, techUsed, rol
 		srcSet.push({
 			temporalURL: temporalImages[i],
 			definitiveURL: `/files/${baseImageName}${breakpoints[i]}.jpg`,
-			media: `(min-width: ${i < breakpoints.length -1 ? breakpoints[i+1] : '0'}px)`
+			media: `(min-width: ${i < breakpoints.length -1 ? breakpoints[i+1] + 1 : '0'}px)`
 		})
 
 	}
@@ -71,7 +71,7 @@ const Page7 = createPageData( 7, "City vibes", "header", temporalImages,
 );
 
 const Page8 = createPageData( 8, "Instamaps, Storymaps and prototypes", "header", temporalImages,
-	[Techs.JS, Techs.HTML5, Techs.CSS3, Techs.Leaflet, Techs.Mapbox, Techs.PostgreSQL, Techs.NodeJS ], [ Roles.FullStackDeveloper ], 
+	[Techs.JS, Techs.HTML5, Techs.CSS3, Techs.Leaflet, Techs.Mapbox, Techs.PostgreSQL, Techs.NodeJS, Techs.React ], [ Roles.FullStackDeveloper, Roles.AppDeveloper ], 
 	[Categories.WebApps]
 );
 
