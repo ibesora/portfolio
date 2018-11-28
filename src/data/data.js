@@ -12,7 +12,7 @@ function createPageData(key, title, baseImageName, temporalImages, techUsed, rol
 		srcSet.push({
 			temporalURL: temporalImages[i],
 			definitiveURL: `/files/${baseImageName}${breakpoints[i]}.jpg`,
-			media: `(min-width: ${i < breakpoints.length -1 ? breakpoints[i+1] : '0'}px)`
+			media: `(min-width: ${i < breakpoints.length -1 ? breakpoints[i+1] + 1 : '0'}px)`
 		})
 
 	}

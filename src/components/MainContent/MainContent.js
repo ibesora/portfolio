@@ -101,7 +101,7 @@ class MainContent extends Component {
 					</div>
 				</Page>
 				<Page isLast={false} {...data.Pages[3]}>
-					<p>This project consisted in the development of a <b>B2B cloud application</b> used to manage sport centers. It was the main product of the software division of <b>Alter Sport</b>, a small startup some colleagues and me founded that created sports-related software and managed a number of sport centers.</p>
+					<p>This project consisted in the development of a <b>Business to Business cloud application</b> used to manage sport centers. It was the main product of the software division of <b>Alter Sport</b>, a small startup some colleagues and me founded that created sports-related software and managed a number of sport centers.</p>
 					<p>It was composed by the following components:</p>
 					<ul>
 						<li>A member-facing website where users could <b>book classes</b>, <b>communicate with their trainers</b>, <b>manage their billing data</b>, <b>view, print and review their training plans</b> and <b>see the log of trainings and classes they had done on the sport center</b> or <b>outside it</b>. The website also included <b>social network features</b>: members had access to a central facebook-like wall where they could <b>see and comment</b> other member activities.</li>
@@ -193,7 +193,46 @@ class MainContent extends Component {
 					</div>
 				</Page>
 				<Page isLast={false} {...data.Pages[7]}>
-					Descripció 7
+					<p><Link href="https://www.instamaps.cat">Instamaps</Link> is a free <b>Software as a Service</b> platform created by <b><Link href="https://twitter.com/ICGCgeostarters">Geostarters</Link></b>, a multidisciplinary task force gathered to create a platform to facilitate the usage of <Link href="http://www.icgc.cat">ICGC</Link>'s digital products and encourage using maps as a mean to disseminate information. On top of that, <b>Instamaps</b> provides tools to map, visualize and perform GIS operations with external data via uploading it or connecting to services like Dropbox, Google Drive, Socrata, ...</p>
+					<p><Link href="http://eines.icgc.cat/storymaps/">Storymaps</Link> is also a free <b>Software as a Service</b> platform created by <b><Link href="https://twitter.com/ICGCgeostarters">Geostarters</Link></b> that was developed to solve the need of our users to create rich visualizations that would combine map visualizations with rich narratives.</p>
+					<p><Link href="http://betaportal.icgc.cat/">Betaportal</Link> is the website where we publish our work as ICGC's innovation and prototyping group. These prototypes are usually done on hackathons when all the group focuses on a prototype for a day to test ideas and new technologies.</p>
+					<p>As a late newcomer to the Geostarters group Instamaps was already deployed to production and in very good shape. My contribution while at Geostarters has been bug hunting, support and development of new features of Instamaps, the development of Storymaps and the participation in many of the prototypes that can be found in the <b>Betaportal</b>. I have also had minor participation on the development of some of the ICGC's smartphone applications.</p>
+					<p>More information about the technical aspects of Instamaps can be found on the following article:</p>
+					<ul>
+						<li><Paper title="Service-oriented map production environments: the implementation of Instamaps" journal="Service Oriented Mapping - Springer" url="https://www.springer.com/la/book/9783319724331" /></li>
+					</ul>
+					<div className={ SharedStyles.row }>
+						<div className= { SharedStyles.col1 }>
+							<ImageWithText  
+									source="/files/web/instamaps4.jpg" alt="Partial view of a route information" 
+									text="Partial view of a route information. On the right you can see the time it would take to follow this route depending on which kind of user you are and the route characteristics." />
+						</div>
+						<div className= { SharedStyles.col1 }>
+							<ImageWithText  
+									source="/files/web/instamaps3.jpg" alt="Landmarks view" 
+									text="The landmarks view screen" />
+						</div>
+						<div className= { SharedStyles.col1 }>
+							<ImageWithText  
+									source="/files/web/instamaps1.jpg" alt="Landmarks view" 
+									text="The landmarks view screen" />
+						</div>
+						<div className= { SharedStyles.col1 }>
+							<ImageWithText  
+									source="/files/web/instamaps2.jpg" alt="Landmarks view" 
+									text="The landmarks view screen" />
+						</div>
+						<div className= { SharedStyles.col1 }>
+							<ImageWithText  
+									source="/files/web/focAlBosc.PNG" alt="Landmarks view" 
+									text="The landmarks view screen" />
+						</div>
+						<div className= { SharedStyles.col1 }>
+							<ImageWithText  
+									source="/files/web/poblacio.PNG" alt="Landmarks view" 
+									text="The landmarks view screen" />
+						</div>
+					</div>
 				</Page>
 				<Page isLast={false} {...data.Pages[8]}>
 					Descripció 8
