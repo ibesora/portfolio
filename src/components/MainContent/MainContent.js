@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import * as data from '../../data/data.js';
+import * as pages from '../../data/data.js';
 import ImageWithText from '../ImageWithText/ImageWithText.js';
 import Link from '../Link/Link.js';
 import Page from '../Page/Page.js';
@@ -11,14 +11,14 @@ class MainContent extends Component {
 	constructor(props) {
 
 		super(props);
-		this.state = { pages: data.Pages };
+		this.state = { pages: pages };
 
 	}
 
 	render() {
 		return (
 			<div>
-				<Page isLast={false} {...data.Pages[0]}>
+				<Page isLast={false} {...pages.Portalada}>
 					<p>This project was joint developed by the <Link href="https://www.virvig.eu">ViRVIG</Link> research group and the <Link href="http://vcg.isti.cnr.it/">Visual Computing Laboratory</Link> of ISTI-CNR in Pisa. It was commissioned by <Link href="https://www.museunacional.cat">MNAC</Link>, the National Art Museum of Catalonia.</p>
 					<p>The project involved a <b>high-fidelity acquisition</b> of the geometry and appearance of the Romanic entrance of the Ripoll Monastery in Catalonia, its <b>geometry processing</b> and <b>repair</b>, the <b>creation of a multiresolution digital 3D model</b> involving 
 					a precise mesh of 173 millions of triangles with and edge size of millimeters and <b>a set of user-friendly visualization tools.</b>.
@@ -45,7 +45,7 @@ class MainContent extends Component {
 						</div>
 					</div>
 				</Page>
-				<Page isLast={false} {...data.Pages[1]}>
+				<Page isLast={false} {...pages.Tarraco}>
 					<p>This project was developed by the <Link href="https://www.virvig.eu">ViRVIG</Link> research group and was aimed at building a virtual reconstruction of the ancient roman city of Tarraco as it was 2000 years ago.</p>
 					<p>The models were created by <Link href="http://www.e-digivision.net/digivision/esp/digivision.html">Digivision</Link> a 3d modelling business that made them in order to be used in a documental series. Our job was to <b>simplify</b> and <b>optimize</b> those models and <b>render</b> them in real-time.</p>
 					<p>The result was a <b>VR kiosk</b> composed of a touch-screen and a back-projection display screen with passive stereo. People were able to move between different attractions of the old Tarraco via a map on the touch-screen and once in-place they were able to move and look freely to examine them as if they were there. In addition to 
@@ -68,7 +68,7 @@ class MainContent extends Component {
 						</div>
 					</div>
 				</Page>
-				<Page isLast={false} {...data.Pages[2]}>
+				<Page isLast={false} {...pages.BAIP}>
 					<p>This project was developed by the <Link href="https://www.virvig.eu">ViRVIG</Link> research group and was aimed at <b>developing a high-end graphics software</b> for the collaborative design of very large models.</p>
 					<p>The project included the development of a <b>custom rendering engine</b> to view very large models with the detail needed by the naval industry. You could inspect every aspect of a tanker before being built by traversing the entire ship, check collisions between elements (to see if they would fit through a door for example) and even get the serial number and specifications of every little screw used by selecting it on the renderer.</p>
 					<p>The main effort of this project was to develop and implement an algorithm to efficiently <b>draw a very large number of triangles</b> and interact with them: moving objects and <b>checking collisions</b>, <b>changing its material attributes</b>, <b>making objects transparent</b> and <b>adding/removing lights</b>.</p>
@@ -100,7 +100,7 @@ class MainContent extends Component {
 						</div>
 					</div>
 				</Page>
-				<Page isLast={false} {...data.Pages[3]}>
+				<Page isLast={false} {...pages.AlterFitness}>
 					<p>This project consisted in the development of a <b>Business to Business cloud application</b> used to manage sport centers. It was the main product of the software division of <b>Alter Sport</b>, a small startup some colleagues and me founded that created sports-related software and managed a number of sport centers.</p>
 					<p>It was composed by the following components:</p>
 					<ul>
@@ -127,7 +127,7 @@ class MainContent extends Component {
 						</div>
 					</div>
 				</Page>
-				<Page isLast={false} {...data.Pages[4]}>
+				<Page isLast={false} {...pages.BergaActiva}>
 					<p>This project was comissioned by the Berga city council and consisted in the development of a <b>web platform</b> and <b>smartphone apps</b> to promote active tourism in the city.</p>
 					<p>Four actors converged on the platform: <b>sport clubs</b>, <b>sport shops</b>, the <b>city council</b> and <b>tourists</b>.</p>
 					<ul>
@@ -152,7 +152,7 @@ class MainContent extends Component {
 						</div>
 					</div>
 				</Page>
-				<Page isLast={false} {...data.Pages[5]}>
+				<Page isLast={false} {...pages.IASTracker}>
 					<p>This project was one of the <b>winners</b> of the first <Link href="http://digitalearthlab.jrc.ec.europa.eu/activities/mygeoss-applications-your-environment/57752">MYGEOSS</Link> contest for innovative applications in environmental and social areas promoted by the Joint Research Center of the European Comission. After winning, <Link href="http://ic5team.org/?q=en/about">IC5Team</Link>, the team behind the project commissioned me to make their project a reality. </p>
 					<p>It consisted of a <b>web platform</b> and <b>smartphone apps</b> to locate invasive species, whether animal or plant, initially in Catalonia and Belgium, but adaptable to any other region of Europe.</p>
 					<p>The public-facing website <b>showed a map with all the observations of invasive species</b> done since the app release. Those <b>observations are classified depending on wether they have been validated by an expert user or not</b> and they contain images and a description made by the user who sent the observation. <b>Observations can also be filtered</b> by their status and by species or taxons.</p>
@@ -167,7 +167,7 @@ class MainContent extends Component {
 						</div>
 					</div>
 				</Page>
-				<Page isLast={false} {...data.Pages[6]}>
+				<Page isLast={false} {...pages.CityVibes}>
 					<p>This project was our team entry to the <Link href="https://www.app-camp.eu/">ESA App Camp</Link>. During a week we were introduced to <Link href="https://www.esa.int/ESA">ESA</Link>'s satellite missions and were asked to develop a solution that used satellite data.</p>
 					<p>Our proposal was based on the realization that the things people value as quality of life are different by each individual and not fixed in time. Our solution to this problem was to <b>provide simple visualizations of the variations of different parameters within a selected city</b>, personalize this information by <b>accounting for individual preferences and needs</b> and <b>empower them to make choices</b> that positively impacted their city experiences.</p>
 					<p>Some of the factors we took into account and their sources were:</p>
@@ -192,11 +192,11 @@ class MainContent extends Component {
 						</div>
 					</div>
 				</Page>
-				<Page isLast={false} {...data.Pages[7]}>
+				<Page isLast={false} {...pages.Instamaps}>
 					<p><Link href="https://www.instamaps.cat">Instamaps</Link> is a free <b>Software as a Service</b> platform created by <b><Link href="https://twitter.com/ICGCgeostarters">Geostarters</Link></b>, a multidisciplinary task force gathered to create a platform to facilitate the usage of <Link href="http://www.icgc.cat">ICGC</Link>'s digital products and encourage using maps as a mean to disseminate information. On top of that, <b>Instamaps</b> provides tools to map, visualize and perform GIS operations with external data via uploading it or connecting to services like Dropbox, Google Drive, Socrata, ...</p>
 					<p><Link href="http://eines.icgc.cat/storymaps/">Storymaps</Link> is also a free <b>Software as a Service</b> platform created by <b><Link href="https://twitter.com/ICGCgeostarters">Geostarters</Link></b> that was developed to solve the need of our users to create rich visualizations that would combine map visualizations with rich narratives.</p>
 					<p><Link href="http://betaportal.icgc.cat/">Betaportal</Link> is the website where we publish our work as ICGC's innovation and prototyping group. These prototypes are usually done on hackathons when all the group focuses on a prototype for a day to test ideas and new technologies.</p>
-					<p>As a late newcomer to the Geostarters group Instamaps was already deployed to production and in very good shape. My contribution while at Geostarters has been bug hunting, support and development of new features of Instamaps, the development of Storymaps and the participation in many of the prototypes that can be found in the <b>Betaportal</b>. I have also had minor participation on the development of some of the ICGC's smartphone applications.</p>
+					<p>As a late newcomer to the Geostarters group, Instamaps was already deployed to production and in very good shape. My contribution while at Geostarters has been<b>bug hunting</b>, <b>customer relations</b> and the <b>support and development of new features</b> of Instamaps, the <b>development of Storymaps</b> and the participation in many of the <b>prototypes</b> that can be found in the <b><Link href="http://betaportal.icgc.cat/">Betaportal</Link></b>. I have also had minor participation on the <b>development of some of the ICGC's smartphone applications</b>.</p>
 					<p>More information about the technical aspects of Instamaps can be found on the following article:</p>
 					<ul>
 						<li><Paper title="Service-oriented map production environments: the implementation of Instamaps" journal="Service Oriented Mapping - Springer" url="https://www.springer.com/la/book/9783319724331" /></li>
@@ -204,44 +204,81 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/instamaps4.jpg" alt="Partial view of a route information" 
-									text="Partial view of a route information. On the right you can see the time it would take to follow this route depending on which kind of user you are and the route characteristics." />
+									source="/files/web/instamaps4.jpg" alt="Start screen of Instamaps" 
+									text="Start screen of Instamaps." />
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/instamaps3.jpg" alt="Landmarks view" 
-									text="The landmarks view screen" />
+									source="/files/web/instamaps3.jpg" alt="Instamaps public gallery" 
+									text="Instamaps public gallery." />
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/instamaps1.jpg" alt="Landmarks view" 
-									text="The landmarks view screen" />
+									source="/files/web/instamaps1.jpg" alt="A map made with Instamaps" 
+									text="A map made with Instamaps." />
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/instamaps2.jpg" alt="Landmarks view" 
-									text="The landmarks view screen" />
+									source="/files/web/storymaps2.jpg" alt="A story map done with StoryMaps" 
+									text="A story map done with StoryMaps." />
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/focAlBosc.PNG" alt="Landmarks view" 
-									text="The landmarks view screen" />
+									source="/files/web/ullDelTemps.jpg" alt="One of our prototypes" 
+									text="One of our prototypes. You can see the current orthophoto and an historical one superimposed. Geolocated images from ICGC's map library are also shown." />
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/poblacio.PNG" alt="Landmarks view" 
-									text="The landmarks view screen" />
+									source="/files/web/ortoagumengtada.jpg" alt="Augmented orthophoto" 
+									text="One of our prototypes. We modified the orthophoto to make the relief stand out." />
 						</div>
 					</div>
 				</Page>
-				<Page isLast={false} {...data.Pages[8]}>
-					Descripció 8
+				<Page isLast={false} {...pages.Canhemon}>
+					<p>It consisted of an Open Source <b>smartphone app</b> and the <b>back-end service</b> needed to support it. It was comissioned by the Joint Research Center of the European Comission and its goal was to create an App to check different aspects of trees.</p>
+					<p>The smartphone application was an <b>hybrid application</b> used <b>to send the observation of a tree</b>. One of the main functionalities was that the user could create areas of interest, the region to observe, to be used offline. System admins were able to create new zones and assign them to the users. They could afterwards see a list of their assigned zones and upload information about the trees there.</p>
+					<p>I was responsible for the <b>back-end implementation</b> and some small details of the <b>smartphone app</b>.</p>
+					<p>All the code created during the development of this project can be found on <Link href="https://github.com/jessisena/TreeCheckerApp">this</Link> public repository.</p>
+					<div className={ SharedStyles.row }>
+						<div className= { SharedStyles.col1 }>
+							<ImageWithText  
+									source="/files/web/canhemon1.png" alt="One of the steps of the starting guide" 
+									text="One of the steps of the starting guide showing information about the areas of interest." />
+						</div>
+						<div className= { SharedStyles.col1 }>
+							<ImageWithText  
+									source="/files/web/canhemon3.png" alt="Information about an observation" 
+									text="Information about an observation." />
+						</div>
+					</div>
 				</Page>
-				<Page isLast={false} {...data.Pages[9]}>
-					Descripció 9
+				{false && 
+				<Page isLast={false} {...pages.Websites}>
+					<p>During all these years I've also been involved in the development of websites for various clients and friends.</p>
+					<p>Those ranged from simple wordpress customizations to full custom websites done from zero and usually involved the hosting management and configuration.</p>
+					<div className={ SharedStyles.row }>
+						<div className= { SharedStyles.col1 }>
+							<ImageWithText  
+									source="/files/web/as.jpg" alt="Website example 1" 
+									text="Website of a sport center." />
+						</div>
+						<div className= { SharedStyles.col1 }>
+							<ImageWithText  
+									source="/files/web/mc.jpg" alt="Website example 2" 
+									text="An artist website with a shop to build art pieces from." />
+						</div>
+					</div>
 				</Page>
-				<Page isLast={true} {...data.Pages[10]}>
-					Descripció 10
+				}
+				<Page isLast={true} {...pages.Other}>
+					<p>During all these years I've also been involved in the development of other projects. Here you can find a list of some of them:</p>
+					<ul>
+						<li><b>3d cycling:</b> When working at <b>Alter Sport</b> I developed a 3d cycling prototype to attract people to our booth in business exhibitions. It's main components were a static bycicle with a speedometer connected to an Arduino board that computed the user cadence and transmitted it to a computer that played a 3d stereoscopic video created by us at the same pace.</li>
+						<li><b>vt-optimizer:</b> A tool to optimize Mapbox Vector Tiles in order to be more performant when displaying them on the web. You can read more about it <Link href="https://medium.com/@ibesora/a-data-driven-journey-through-vector-tile-optimization-4a1dbd4f3a27">here</Link>.</li>
+						<li><b>Algorithms:</b> A never-ending respository of algorithms in different programming languages in order to keep my algorithmic skills in good shape.</li>
+						<li><b>Udacity's Deep Learning nanodegree course notes:</b> When doing the Deep Learning nanodegree I started to write the course notes on a public repository. Since then I've updated them various times in order to collect all my knowledge on the subject in one place. You can find them <Link href="https://ibesora.github.io/udacity-deeplearning-notes/">here</Link>. The projects I did on the nanodegree can also be found there.</li>
+						<li><b>Ray tracer:</b> Following Peter Shirley's <Link href="https://www.amazon.com/dp/B01B5AODD8">Ray tracing in one weekend</Link> book, I implemented a WebGL ray tracer that runs via a fragment shader. In addition to the base implementation found in the book I've added some extra techniques like shadowing and area lights. You can find it <Link href="https://github.com/ibesora/webgl-raytracer">here</Link>.</li>
+					</ul>
 				</Page>
 			</div>
 		);
