@@ -117,13 +117,13 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/af2.jpg" alt="Member-facing website" 
-									text="The member-facing website's sport center wall." />
+									source="/files/web/af2.jpg" alt="Log your exercises" 
+									text="Promotional image of the platform. The text reads 'Log your exercises'."/>
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
 									source="/files/web/af1.jpg" alt="Trainer-facing website" 
-									text="The trainer-facing website's training plan creation." />
+									text="Promotional image of the platform. The text reads 'Your training on the cloud'."/>
 						</div>
 					</div>
 				</Page>
@@ -229,7 +229,7 @@ class MainContent extends Component {
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/ortoagumengtada.jpg" alt="Augmented orthophoto" 
+									source="/files/web/ortoaugmentada.jpg" alt="Augmented orthophoto" 
 									text="One of our prototypes. We modified the orthophoto to make the relief stand out." />
 						</div>
 					</div>
@@ -278,16 +278,23 @@ class MainContent extends Component {
 						<li><b>Algorithms:</b> A never-ending respository of algorithms in different programming languages in order to keep my algorithmic skills in good shape.</li>
 						<li><b>Udacity's Deep Learning nanodegree course notes:</b> When doing the Deep Learning nanodegree I started to write the course notes on a public repository. Since then I've updated them various times in order to collect all my knowledge on the subject in one place. You can find them <Link href="https://ibesora.github.io/udacity-deeplearning-notes/">here</Link>. The projects I did on the nanodegree can also be found there.</li>
 						<li><b>Ray tracer:</b> Following Peter Shirley's <Link href="https://www.amazon.com/dp/B01B5AODD8">Ray tracing in one weekend</Link> book, I implemented a WebGL ray tracer that runs via a fragment shader. In addition to the base implementation found in the book I've added some extra techniques like shadowing and area lights. You can find it <Link href="https://github.com/ibesora/webgl-raytracer">here</Link>.</li>
-						<li><b>PhD:</b> I'm a PhD candidate on the <Link href="https://www.virvig.eu">ViRVIG</Link> research group. My thesis is focused on urban city reconstruction.</li>
-						<div className= { SharedStyles.col1 }>
-							<ImageWithText  
-									source="/files/rendering/depth1.jpg" alt="Website example 1" 
-									text="Website of a sport center." />
-						</div>
-						<div className= { SharedStyles.col1 }>
-							<ImageWithText  
-									source="/files/rendering/depth2.jpg" alt="Website example 1" 
-									text="Website of a sport center." />
+						<li><b>PhD:</b> I'm a PhD candidate on the <Link href="https://www.virvig.eu">ViRVIG</Link> research group and I'm actively collaborating with them in a number of projects. My thesis is focused on urban city reconstruction.</li>
+						<div className={ SharedStyles.row }>
+							<div className= { SharedStyles.col1 }>
+								<ImageWithText  
+										source="/files/web/3dcycling.jpg" alt="3d cycling prototype" 
+										text="An user trying our 3d cycling prototype." />
+							</div>
+							<div className= { SharedStyles.col1 }>
+								<ImageWithText  
+										source="/files/rendering/depth1.jpg" alt="ViRVIG collaboration" 
+										text="Results of the work done with ViRVIG. Image of a paper describing a new method to repair facades." />
+							</div>
+							<div className= { SharedStyles.col1 }>
+								<ImageWithText  
+										source="/files/rendering/depth2.jpg" alt="ViRVIG collaboration" 
+										text="Results of the work done with ViRVIG. Image of a paper describing a new method to repair facades." />
+							</div>
 						</div>
 					</ul>
 				</Page>

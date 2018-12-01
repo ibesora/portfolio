@@ -88,7 +88,7 @@ const Websites = createPageData( 10, "Websites", "header", temporalImages,
 
 //3d spinning, vector tile optimizer, algorithms, apunts i projectes deep learning, aquesta web (incidència amb la velocitat i el pes), raytracing
 const Other = createPageData( 11, "Minor and ongoing projects", "rt", temporalImages,
-	[Techs.Arduino, Techs.NodeJS, Techs.Keras, Techs.Tensorflow, Techs.React, Techs.WebGL ], [ Roles.FullStackDeveloper ], 
+	[Techs.Arduino, Techs.NodeJS, Techs.Keras, Techs.Tensorflow, Techs.React, Techs.WebGL, Techs.OpenGL, Techs.JS, Techs.CPlusPlus, Techs.Python ], [ Roles.FullStackDeveloper, Roles.RenderingEngineer, Roles.LeadEngineer ], 
 	[Categories.Other]
 );
 
