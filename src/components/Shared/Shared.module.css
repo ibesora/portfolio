@@ -132,6 +132,14 @@
 	margin-top: 0px;
 }
 
+.marginTop3 {
+	margin-top: 3px;
+}
+
+.noBottomMargin {
+	margin-bottom: 0px;
+}
+
 .marginTop40 {
 	margin-top: 40px;
 }

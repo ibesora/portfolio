@@ -75,7 +75,7 @@ const Instamaps = createPageData( 8, "Instamaps, Storymaps and prototypes", "ins
 	[Categories.WebApps]
 );
 
-const Canhemon = createPageData( 9, "Canhemon", "header", temporalImages,
+const Canhemon = createPageData( 9, "Canhemon", "canhemon", temporalImages,
 	[Techs.JS, Techs.HTML5, Techs.CSS3, Techs.Leaflet, Techs.Django, Techs.React ], [ Roles.BackendDeveloper, Roles.AppDeveloper ], 
 	[Categories.Web, Categories.App]
 );
@@ -87,7 +87,7 @@ const Websites = createPageData( 10, "Websites", "header", temporalImages,
 );
 
 //3d spinning, vector tile optimizer, algorithms, apunts i projectes deep learning, aquesta web (incidència amb la velocitat i el pes), raytracing
-const Other = createPageData( 11, "Minor and ongoing projects", "header", temporalImages,
+const Other = createPageData( 11, "Minor and ongoing projects", "rt", temporalImages,
 	[Techs.Arduino, Techs.NodeJS, Techs.Keras, Techs.Tensorflow, Techs.React, Techs.WebGL ], [ Roles.FullStackDeveloper ], 
 	[Categories.Other]
 );

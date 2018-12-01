@@ -242,12 +242,12 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/canhemon1.png" alt="One of the steps of the starting guide" 
+									source="/files/web/canhemon1.jpg" alt="One of the steps of the starting guide" 
 									text="One of the steps of the starting guide showing information about the areas of interest." />
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/canhemon3.png" alt="Information about an observation" 
+									source="/files/web/canhemon2.jpg" alt="Information about an observation" 
 									text="Information about an observation." />
 						</div>
 					</div>
@@ -271,13 +271,24 @@ class MainContent extends Component {
 				</Page>
 				}
 				<Page isLast={true} {...pages.Other}>
-					<p>During all these years I've also been involved in the development of other projects. Here you can find a list of some of them:</p>
+					<p>During all these years I've also been involved in the development of other projects. Here you can find a list of some of them and others I'm actively working on:</p>
 					<ul>
 						<li><b>3d cycling:</b> When working at <b>Alter Sport</b> I developed a 3d cycling prototype to attract people to our booth in business exhibitions. It's main components were a static bycicle with a speedometer connected to an Arduino board that computed the user cadence and transmitted it to a computer that played a 3d stereoscopic video created by us at the same pace.</li>
 						<li><b>vt-optimizer:</b> A tool to optimize Mapbox Vector Tiles in order to be more performant when displaying them on the web. You can read more about it <Link href="https://medium.com/@ibesora/a-data-driven-journey-through-vector-tile-optimization-4a1dbd4f3a27">here</Link>.</li>
 						<li><b>Algorithms:</b> A never-ending respository of algorithms in different programming languages in order to keep my algorithmic skills in good shape.</li>
 						<li><b>Udacity's Deep Learning nanodegree course notes:</b> When doing the Deep Learning nanodegree I started to write the course notes on a public repository. Since then I've updated them various times in order to collect all my knowledge on the subject in one place. You can find them <Link href="https://ibesora.github.io/udacity-deeplearning-notes/">here</Link>. The projects I did on the nanodegree can also be found there.</li>
 						<li><b>Ray tracer:</b> Following Peter Shirley's <Link href="https://www.amazon.com/dp/B01B5AODD8">Ray tracing in one weekend</Link> book, I implemented a WebGL ray tracer that runs via a fragment shader. In addition to the base implementation found in the book I've added some extra techniques like shadowing and area lights. You can find it <Link href="https://github.com/ibesora/webgl-raytracer">here</Link>.</li>
+						<li><b>PhD:</b> I'm a PhD candidate on the <Link href="https://www.virvig.eu">ViRVIG</Link> research group. My thesis is focused on urban city reconstruction.</li>
+						<div className= { SharedStyles.col1 }>
+							<ImageWithText  
+									source="/files/rendering/depth1.jpg" alt="Website example 1" 
+									text="Website of a sport center." />
+						</div>
+						<div className= { SharedStyles.col1 }>
+							<ImageWithText  
+									source="/files/rendering/depth2.jpg" alt="Website example 1" 
+									text="Website of a sport center." />
+						</div>
 					</ul>
 				</Page>
 			</div>
