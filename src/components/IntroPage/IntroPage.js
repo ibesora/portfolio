@@ -24,7 +24,9 @@ class IntroPage extends Component {
 						<div className={ `${SharedStyles.fullWidth}` }>
 							<ImageWithText className={ `${ SharedStyles.largeImage } ${ SharedStyles.rounded}` } 
 								source="/files/Berga.jpg" alt="Berga" showAltAsTitle={true} alignRight={true}
-								text="Berga, the best hometown in the entire world - Pere López - CC BY-SA 3.0" />
+								text="Berga, the best hometown in the entire world - Pere López - CC BY-SA 3.0" 
+								noEnlarge
+								/>
 						</div>
 					</div>
 					<br />

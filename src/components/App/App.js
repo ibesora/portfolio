@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Menu from '../Menu/Menu.js';
 import IntroPage from '../IntroPage/IntroPage.js';
+import FullScreenImage from '../FullScreenImage/FullScreenImage.js';
 import MainContent from '../MainContent/MainContent.js';
+import Menu from '../Menu/Menu.js';
 import OutroPage from '../OutroPage/OutroPage.js';
 
 import Shared from '../Shared/Shared.module.css';
@@ -11,20 +12,48 @@ class App extends Component {
 	constructor(props) {
 
 		super(props);
-		this.state = {showScrollArrow: true};
+		this.state = {
+			showScrollArrow: true, 
+			showFullScreenImage: false,
+			fullScreenImageURL: ""
+		};
 
 	}
 
 	render() {
 		return (
 			<div>
-				<Menu />
+				<FullScreenImage 
+					visible={ this.state.showFullScreenImage } 
+					imageURL={ this.state.fullScreenImageURL } 
+					alt={ this.state.fullScreenImageAlt }
+					text={ this.state.fullScreenImageText }
+					onCloseHandler={ () => this.fullScreenImageClosed() }
+				/>
+				<Menu menuHandler={ this.changeVisiblePages }/>
 				<IntroPage />
-				<MainContent />
+				<MainContent imageClickHandler={ this.changeFullScreenImageStatus.bind(this) }/>
 				<OutroPage />
 				<div className={ `${ScrollingArrowStyle.scrollDownArrow} ${this.state.showScrollArrow ? Shared.display : Shared.hide }` }></div>
 			</div>
 		);
+	}
+
+	fullScreenImageClosed() {
+
+		this.setState(() => { return { showFullScreenImage: false }});
+
+	}
+
+	changeVisiblePages() {
+
+	}
+
+	changeFullScreenImageStatus(imageURL, imageAlt, imageText) {
+
+		this.setState(() => { return { showFullScreenImage: true, fullScreenImageURL: imageURL, 
+			fullScreenImageAlt: imageAlt, fullScreenImageText: imageText }});
+
 	}
 
 	componentDidMount() {

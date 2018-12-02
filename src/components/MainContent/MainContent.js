@@ -35,13 +35,21 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 } >
 							<ImageWithText  
-									source="/files/thumbs/rendering/portalada2.jpg" alt="Detail of the portalada"
-									text="Close detail of the Pantocrator in Ripoll Monastery entrance. You can see how even the rough surface was captured." />
+									source="/files/thumbs/rendering/portalada2.jpg" 
+									bigImageSrc="/files/big/rendering/portalada2.jpg" 
+									alt="Detail of the portalada"
+									text="Close detail of the Pantocrator in Ripoll Monastery entrance. You can see how even the rough surface was captured." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/rendering/portalada3.jpg" alt="Side view of the portalada" 
-									text="Side view of the portalada." />
+									source="/files/thumbs/rendering/portalada3.jpg" 
+									bigImageSrc="/files/big/rendering/portalada3.jpg" 
+									alt="Side view of the portalada" 
+									text="Side view of the portalada." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 					</div>
 				</Page>
@@ -58,13 +66,21 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/rendering/tarraco1.jpg" alt="An NPC character" 
-									text="An NPC character ready to ask us some questions." />
+									source="/files/thumbs/rendering/tarraco1.jpg" 
+									bigImageSrc="/files/big/rendering/tarraco1.jpg" 
+									alt="An NPC character" 
+									text="An NPC character ready to ask us some questions." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/rendering/tarraco3.jpg" alt="Roman circus tribune" 
-									text="In-development visualization of the Roman circus tribune." />
+									source="/files/thumbs/rendering/tarraco3.jpg" 
+									bigImageSrc="/files/big/rendering/tarraco3.jpg" 
+									alt="Roman circus tribune" 
+									text="In-development visualization of the Roman circus tribune." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 					</div>
 				</Page>
@@ -80,23 +96,39 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/rendering/baip1.jpg" alt="A single tanker" 
-									text="View of a single tanker." />
+									source="/files/thumbs/rendering/baip1.jpg" 
+									bigImageSrc="/files/big/rendering/baip1.jpg" 
+									alt="A single tanker" 
+									text="View of a single tanker." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/rendering/baip2.jpg" alt="Engine room" 
-									text="View of the engine room." />
+									source="/files/thumbs/rendering/baip2.jpg" 
+									bigImageSrc="/files/big/rendering/baip2.jpg" 
+									alt="Engine room" 
+									text="View of the engine room." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/rendering/baip3.jpg" alt="Boing rendering" 
-									text="Our renderer was also tested to inspect a Boeing plane." />
+									source="/files/thumbs/rendering/baip3.jpg" 
+									bigImageSrc="/files/big/rendering/baip3.jpg" 
+									alt="Boing rendering" 
+									text="Our renderer was also tested to inspect a Boeing plane." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/rendering/baip4.jpg" alt="Debug view of a group of tankers being rendered" 
-									text="Debug view of a group of tankers being rendered. Each of them could be inspected." />
+									source="/files/thumbs/rendering/baip4.jpg" 
+									bigImageSrc="/files/big/rendering/baip4.jpg" 
+									alt="Debug view of a group of tankers being rendered" 
+									text="Debug view of a group of tankers being rendered. Each of them could be inspected." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 					</div>
 				</Page>
@@ -117,13 +149,21 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/web/af2.jpg" alt="Log your exercises" 
-									text="Promotional image of the platform. The text reads 'Log your exercises'."/>
+									source="/files/thumbs/web/af2.jpg" 
+									bigImageSrc="/files/big/web/af2.jpg" 
+									alt="Log your exercises" 
+									text="Promotional image of the platform. The text reads 'Log your exercises'."
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/web/af1.jpg" alt="Trainer-facing website" 
-									text="Promotional image of the platform. The text reads 'Your training on the cloud'."/>
+									source="/files/thumbs/web/af1.jpg" 
+									bigImageSrc="/files/big/web/af1.jpg" 									
+									alt="Trainer-facing website" 
+									text="Promotional image of the platform. The text reads 'Your training on the cloud'."
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 					</div>
 				</Page>
@@ -142,13 +182,21 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/web/ba3.jpg" alt="Partial view of a route information" 
-									text="Partial view of a route information. On the right you can see the time it would take to follow this route depending on which kind of user you are and the route characteristics." />
+									source="/files/thumbs/web/ba3.jpg" 
+									bigImageSrc="/files/big/web/ba3.jpg" 
+									alt="Partial view of a route information" 
+									text="Partial view of a route information. On the right you can see the time it would take to follow this route depending on which kind of user you are and the route characteristics." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/web/ba2.jpg" alt="Landmarks view" 
-									text="The landmarks view screen" />
+									source="/files/thumbs/web/ba2.jpg" 
+									bigImageSrc="/files/big/web/ba2.jpg" 
+									alt="Landmarks view" 
+									text="The landmarks view screen" 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 					</div>
 				</Page>
@@ -162,8 +210,12 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/web/iastracker1.jpg" alt="View of the map with the observations" 
-									text="The map with the observations as shown on the user-facing website." />
+									source="/files/thumbs/web/iastracker1.jpg" 
+									bigImageSrc="/files/big/web/iastracker1.jpg" 
+									alt="View of the map with the observations" 
+									text="The map with the observations as shown on the user-facing website." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 					</div>
 				</Page>
@@ -182,13 +234,21 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/web/cv1.jpg" alt="User preferences selection menu" 
-									text="The user would move the sliders indicating how much they valuated each concept." />
+									source="/files/thumbs/web/cv1.jpg" 
+									bigImageSrc="/files/big/web/cv1.jpg" 
+									alt="User preferences selection menu" 
+									text="The user would move the sliders indicating how much they valuated each concept." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/web/cv2.jpg" alt="View of the map with the results overprinted" 
-									text="The map showing a semi transparent layer with the results of their mixed preferences." />
+									source="/files/thumbs/web/cv2.jpg" 
+									bigImageSrc="/files/big/web/cv2.jpg" 
+									alt="View of the map with the results overprinted" 
+									text="The map showing a semi transparent layer with the results of their mixed preferences." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 					</div>
 				</Page>
@@ -204,33 +264,57 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/web/instamaps4.jpg" alt="Start screen of Instamaps" 
-									text="Start screen of Instamaps." />
+									source="/files/thumbs/web/instamaps4.jpg" 
+									bigImageSrc="/files/big/web/instamaps4.jpg" 
+									alt="Splash screen of Instamaps" 
+									text="Splash screen of Instamaps." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/web/instamaps3.jpg" alt="Instamaps public gallery" 
-									text="Instamaps public gallery." />
+									source="/files/thumbs/web/instamaps3.jpg" 
+									bigImageSrc="/files/big/web/instamaps3.jpg" 
+									alt="Instamaps public gallery" 
+									text="Instamaps public gallery." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/web/instamaps1.jpg" alt="A map made with Instamaps" 
-									text="A map made with Instamaps." />
+									source="/files/thumbs/web/instamaps1.jpg" 
+									bigImageSrc="/files/big/web/instamaps1.jpg" 
+									alt="A map made with Instamaps" 
+									text="A map made with Instamaps." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/web/storymaps2.jpg" alt="A story map done with StoryMaps" 
-									text="A story map done with StoryMaps." />
+									source="/files/thumbs/web/storymaps2.jpg" 
+									bigImageSrc="/files/big/web/storymaps2.jpg" 
+									alt="A story map done with StoryMaps" 
+									text="A story map done with StoryMaps." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/web/ullDelTemps.jpg" alt="One of our prototypes" 
-									text="One of our prototypes. You can see the current orthophoto and an historical one superimposed. Geolocated images from ICGC's map library are also shown." />
+									source="/files/thumbs/web/ullDelTemps.jpg" 
+									bigImageSrc="/files/big/web/ullDelTemps.jpg" 
+									alt="One of our prototypes" 
+									text="One of our prototypes. You can see the current orthophoto and an historical one superimposed. Geolocated images from ICGC's map library are also shown." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/web/ortoaugmentada.jpg" alt="Augmented orthophoto" 
-									text="One of our prototypes. We modified the orthophoto to make the relief stand out." />
+									source="/files/thumbs/web/ortoaugmentada.jpg" 
+									bigImageSrc="/files/big/web/ortoaugmentada.jpg" 
+									alt="Augmented orthophoto" 
+									text="One of our prototypes. We modified the orthophoto to make the relief stand out." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 					</div>
 				</Page>
@@ -242,13 +326,21 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/web/canhemon1.jpg" alt="One of the steps of the starting guide" 
-									text="One of the steps of the starting guide showing information about the areas of interest." />
+									source="/files/thumbs/web/canhemon1.jpg" 
+									bigImageSrc="/files/big/web/canhemon1.jpg" 
+									alt="One of the steps of the starting guide" 
+									text="One of the steps of the starting guide showing information about the areas of interest." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/web/canhemon2.jpg" alt="Information about an observation" 
-									text="Information about an observation." />
+									source="/files/thumbs/web/canhemon2.jpg" 
+									bigImageSrc="/files/big/web/canhemon3.jpg" 
+									alt="Information about an observation" 
+									text="Information about an observation." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 					</div>
 				</Page>
@@ -259,13 +351,21 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/web/as.jpg" alt="Website example 1" 
-									text="Website of a sport center." />
+									source="/files/thumbs/web/as.jpg" 
+									bigImageSrc="/files/big/web/as.jpg" 
+									alt="Website example 1" 
+									text="Website of a sport center." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/web/mc.jpg" alt="Website example 2" 
-									text="An artist website with a shop to build art pieces from." />
+									source="/files/thumbs/web/mc.jpg" 
+									bigImageSrc="/files/big/web/mc.jpg" 
+									alt="Website example 2" 
+									text="An artist website with a shop to build art pieces from." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 					</div>
 				</Page>
@@ -283,18 +383,29 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/web/3dcycling.jpg" alt="3d cycling prototype" 
-									text="An user trying our 3d cycling prototype." />
+									source="/files/thumbs/web/3dcycling.jpg" 
+									bigImageSrc="/files/big/web/3dcycling.jpg" 
+									alt="3d cycling prototype" 
+									text="An user trying our 3d cycling prototype." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/rendering/depth1.jpg" alt="ViRVIG collaboration" 
-									text="Results of the work done with ViRVIG. Image of a paper describing a new method to repair facades." />
+									source="/files/thumbs/rendering/depth1.jpg" 
+									bigImageSrc="/files/big/rendering/depth1.jpg" 
+									alt="ViRVIG collaboration" 
+									text="Results of the work done with ViRVIG. Image of a paper describing a new method to repair facades captured via photogrammetry." 
+									imageClickHandler = { this.props.imageClickHandler }
+									/>
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/thumbs/rendering/depth2.jpg" alt="ViRVIG collaboration" 
-									text="Results of the work done with ViRVIG. Image of a paper describing a new method to repair facades." />
+									source="/files/thumbs/rendering/depth2.jpg" 
+									bigImageSrc="/files/big/rendering/depth2.jpg" 
+									alt="ViRVIG collaboration" 
+									text="Results of the work done with ViRVIG. Image of a paper describing a new method to repair facades captured via photogrammetry." 
+									imageClickHandler = { this.props.imageClickHandler }/>
 						</div>
 					</div>
 				</Page>
