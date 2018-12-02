@@ -15,7 +15,7 @@ class App extends Component {
 		this.state = {
 			selectedCategoryId: 0,
 			showScrollArrow: true,
-			showMenu: false, 
+			showMenu: true, 
 			showFullScreenImage: false,
 			fullScreenImageURL: ""
 		};
