@@ -18,6 +18,7 @@ class MainContent extends Component {
 	render() {
 		return (
 			<div>
+				{ this.isPageVisible(pages.Portalada) &&
 				<Page isLast={false} {...pages.Portalada}>
 					<p>This project was joint developed by the <Link href="https://www.virvig.eu">ViRVIG</Link> research group and the <Link href="http://vcg.isti.cnr.it/">Visual Computing Laboratory</Link> of ISTI-CNR in Pisa. It was commissioned by <Link href="https://www.museunacional.cat">MNAC</Link>, the National Art Museum of Catalonia.</p>
 					<p>The project involved a <b>high-fidelity acquisition</b> of the geometry and appearance of the Romanic entrance of the Ripoll Monastery in Catalonia, its <b>geometry processing</b> and <b>repair</b>, the <b>creation of a multiresolution digital 3D model</b> involving 
@@ -53,6 +54,8 @@ class MainContent extends Component {
 						</div>
 					</div>
 				</Page>
+				}
+				{ this.isPageVisible(pages.Tarraco) &&
 				<Page isLast={false} {...pages.Tarraco}>
 					<p>This project was developed by the <Link href="https://www.virvig.eu">ViRVIG</Link> research group and was aimed at building a virtual reconstruction of the ancient roman city of Tarraco as it was 2000 years ago.</p>
 					<p>The models were created by <Link href="http://www.e-digivision.net/digivision/esp/digivision.html">Digivision</Link> a 3d modelling business that made them in order to be used in a documental series. Our job was to <b>simplify</b> and <b>optimize</b> those models and <b>render</b> them in real-time.</p>
@@ -84,6 +87,8 @@ class MainContent extends Component {
 						</div>
 					</div>
 				</Page>
+				}
+				{ this.isPageVisible(pages.BAIP) &&
 				<Page isLast={false} {...pages.BAIP}>
 					<p>This project was developed by the <Link href="https://www.virvig.eu">ViRVIG</Link> research group and was aimed at <b>developing a high-end graphics software</b> for the collaborative design of very large models.</p>
 					<p>The project included the development of a <b>custom rendering engine</b> to view very large models with the detail needed by the naval industry. You could inspect every aspect of a tanker before being built by traversing the entire ship, check collisions between elements (to see if they would fit through a door for example) and even get the serial number and specifications of every little screw used by selecting it on the renderer.</p>
@@ -132,6 +137,8 @@ class MainContent extends Component {
 						</div>
 					</div>
 				</Page>
+				}
+				{ this.isPageVisible(pages.AlterFitness) &&
 				<Page isLast={false} {...pages.AlterFitness}>
 					<p>This project consisted in the development of a <b>Business to Business cloud application</b> used to manage sport centers. It was the main product of the software division of <b>Alter Sport</b>, a small startup some colleagues and me founded that created sports-related software and managed a number of sport centers.</p>
 					<p>It was composed by the following components:</p>
@@ -167,6 +174,8 @@ class MainContent extends Component {
 						</div>
 					</div>
 				</Page>
+				}
+				{ this.isPageVisible(pages.BergaActiva) &&
 				<Page isLast={false} {...pages.BergaActiva}>
 					<p>This project was comissioned by the Berga city council and consisted in the development of a <b>web platform</b> and <b>smartphone apps</b> to promote active tourism in the city.</p>
 					<p>Four actors converged on the platform: <b>sport clubs</b>, <b>sport shops</b>, the <b>city council</b> and <b>tourists</b>.</p>
@@ -200,6 +209,8 @@ class MainContent extends Component {
 						</div>
 					</div>
 				</Page>
+				}
+				{ this.isPageVisible(pages.IASTracker) &&
 				<Page isLast={false} {...pages.IASTracker}>
 					<p>This project was one of the <b>winners</b> of the first <Link href="http://digitalearthlab.jrc.ec.europa.eu/activities/mygeoss-applications-your-environment/57752">MYGEOSS</Link> contest for innovative applications in environmental and social areas promoted by the Joint Research Center of the European Comission. After winning, <Link href="http://ic5team.org/?q=en/about">IC5Team</Link>, the team behind the project commissioned me to make their project a reality. </p>
 					<p>It consisted of a <b>web platform</b> and <b>smartphone apps</b> to locate invasive species, whether animal or plant, initially in Catalonia and Belgium, but adaptable to any other region of Europe.</p>
@@ -219,6 +230,8 @@ class MainContent extends Component {
 						</div>
 					</div>
 				</Page>
+				}
+				{ this.isPageVisible(pages.CityVibes) &&
 				<Page isLast={false} {...pages.CityVibes}>
 					<p>This project was our team entry to the <Link href="https://www.app-camp.eu/">ESA App Camp</Link>. During a week we were introduced to <Link href="https://www.esa.int/ESA">ESA</Link>'s satellite missions and were asked to develop a solution that used satellite data.</p>
 					<p>Our proposal was based on the realization that the things people value as quality of life are different by each individual and not fixed in time. Our solution to this problem was to <b>provide simple visualizations of the variations of different parameters within a selected city</b>, personalize this information by <b>accounting for individual preferences and needs</b> and <b>empower them to make choices</b> that positively impacted their city experiences.</p>
@@ -252,6 +265,8 @@ class MainContent extends Component {
 						</div>
 					</div>
 				</Page>
+				}
+				{ this.isPageVisible(pages.Instamaps) &&
 				<Page isLast={false} {...pages.Instamaps}>
 					<p><Link href="https://www.instamaps.cat">Instamaps</Link> is a free <b>Software as a Service</b> platform created by <b><Link href="https://twitter.com/ICGCgeostarters">Geostarters</Link></b>, a multidisciplinary task force gathered to create a platform to facilitate the usage of <Link href="http://www.icgc.cat">ICGC</Link>'s digital products and encourage using maps as a mean to disseminate information. On top of that, <b>Instamaps</b> provides tools to map, visualize and perform GIS operations with external data via uploading it or connecting to services like Dropbox, Google Drive, Socrata, ...</p>
 					<p><Link href="http://eines.icgc.cat/storymaps/">Storymaps</Link> is also a free <b>Software as a Service</b> platform created by <b><Link href="https://twitter.com/ICGCgeostarters">Geostarters</Link></b> that was developed to solve the need of our users to create rich visualizations that would combine map visualizations with rich narratives.</p>
@@ -318,6 +333,8 @@ class MainContent extends Component {
 						</div>
 					</div>
 				</Page>
+				}
+				{ this.isPageVisible(pages.Canhemon) &&
 				<Page isLast={false} {...pages.Canhemon}>
 					<p>It consisted of an Open Source <b>smartphone app</b> and the <b>back-end service</b> needed to support it. It was comissioned by the Joint Research Center of the European Comission and its goal was to create an App to check different aspects of trees.</p>
 					<p>The smartphone application was an <b>hybrid application</b> used <b>to send the observation of a tree</b>. One of the main functionalities was that the user could create areas of interest, the region to observe, to be used offline. System admins were able to create new zones and assign them to the users. They could afterwards see a list of their assigned zones and upload information about the trees there.</p>
@@ -344,7 +361,8 @@ class MainContent extends Component {
 						</div>
 					</div>
 				</Page>
-				{false && 
+				}
+				{ false && this.isPageVisible(pages.Websites) &&
 				<Page isLast={false} {...pages.Websites}>
 					<p>During all these years I've also been involved in the development of websites for various clients and friends.</p>
 					<p>Those ranged from simple wordpress customizations to full custom websites done from zero and usually involved the hosting management and configuration.</p>
@@ -370,6 +388,7 @@ class MainContent extends Component {
 					</div>
 				</Page>
 				}
+				{ this.isPageVisible(pages.Other) &&
 				<Page isLast={true} {...pages.Other}>
 					<p>During all these years I've also been involved in the development of other projects. Here you can find a list of some of them and others I'm actively working on:</p>
 					<ul>
@@ -409,9 +428,21 @@ class MainContent extends Component {
 						</div>
 					</div>
 				</Page>
+				}
 			</div>
 		);
+
 	}
+
+	isPageVisible(page) {
+
+		if(this.props.selectedCategoryId === 0)
+			return true;
+
+		return page.categories.some((elem) => elem.key === this.props.selectedCategoryId);
+
+	}
+
 }
 
 export default MainContent;

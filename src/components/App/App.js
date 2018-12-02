@@ -13,7 +13,9 @@ class App extends Component {
 
 		super(props);
 		this.state = {
-			showScrollArrow: true, 
+			selectedCategoryId: 0,
+			showScrollArrow: true,
+			showMenu: false, 
 			showFullScreenImage: false,
 			fullScreenImageURL: ""
 		};
@@ -30,9 +32,9 @@ class App extends Component {
 					text={ this.state.fullScreenImageText }
 					onCloseHandler={ () => this.fullScreenImageClosed() }
 				/>
-				<Menu menuHandler={ this.changeVisiblePages }/>
-				<IntroPage />
-				<MainContent imageClickHandler={ this.changeFullScreenImageStatus.bind(this) }/>
+				<Menu menuOptionClickHandler={ (categoryId) => this.changeVisiblePages(categoryId) } showNavItems={ this.state.showMenu }/>
+				{ this.state.selectedCategoryId === 0 && <IntroPage /> }
+				<MainContent imageClickHandler={ this.changeFullScreenImageStatus.bind(this) } selectedCategoryId={ this.state.selectedCategoryId }/>
 				<OutroPage />
 				<div className={ `${ScrollingArrowStyle.scrollDownArrow} ${this.state.showScrollArrow ? Shared.display : Shared.hide }` }></div>
 			</div>
@@ -45,7 +47,9 @@ class App extends Component {
 
 	}
 
-	changeVisiblePages() {
+	changeVisiblePages(categoryId) {
+
+		this.setState(() => { return { selectedCategoryId: categoryId} });
 
 	}
 

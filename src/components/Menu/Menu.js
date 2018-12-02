@@ -22,8 +22,9 @@ class Menu extends Component {
 				definitiveURL: "/files/header570.jpg"
 			}
 		];
-		this.state = { srcSet, alt: "background", collapseMenu: false };
+		this.state = { srcSet, alt: "background", collapseMenu: false, selectedCategory: "All" };
 	}
+
 	render() {
 		return (
 			<div className = { `${styles.animated} ${styles.outer} ${this.state.collapseMenu ? `${styles.collapsed} ${styles.absolute}` : '' }`}>
@@ -33,11 +34,11 @@ class Menu extends Component {
 					<img alt="logo" src="/files/logos/logo.svg" className={ `${styles.logo} ${styles.animated} ${this.state.collapseMenu ? styles.collapsed : ''}` }></img>
 				</div>
 				<nav>
-					<div className={ `${styles.menuContainer} ${styles.animated} ${styles.navWide} ${this.state.collapseMenu ? styles.collapsed : ''}` }>{ this.renderNavItems() }</div>
+					<div className={ `${styles.menuContainer} ${styles.animated} ${styles.navWide} ${this.state.collapseMenu ? styles.collapsed : ''}` }>{ this.props.showNavItems && this.renderNavItems() }</div>
 					<div className={ `${styles.menuContainer} ${styles.animated} ${styles.navNarrow} ${this.state.collapseMenu ? styles.collapsed : ''}` }>
 						<i className={`fa fa-bars fa-2x ${this.state.collapseMenu ? styles.burguerRight : ''}`} onClick={this.burgerToggle}></i>
 						<div className={styles.navNarrowLinks}>
-							{ this.renderNavItems() }
+							{ this.props.showNavItems && this.renderNavItems() }
 						</div>
 					</div>
 				</nav>
@@ -47,12 +48,24 @@ class Menu extends Component {
 
 	renderNavItems() {
 		let index = 0;
-		const navs = [<div key={ index } className={ styles.menuItem }><a href="#all">All</a></div>];
+		const navs = [<div key={ index } className={ styles.menuItem } onClick={() => this.navItemClicked("All", 0)}><a className={ (this.state.selectedCategory === "All") ? styles.selectedNav : "" } href="#all">All</a></div>];
 		for(let categoryName in Categories) {
+			const current = Categories[categoryName];
+			if(current.invisible)
+				continue;
+
 			index++;
-			navs.push(<div key={ index } className={ styles.menuItem }><a href={`#${Categories[categoryName].link}`}>{Categories[categoryName].name}</a></div>);
+			const isSelected = (current.name === this.state.selectedCategory);
+			navs.push(<div key={ index } className={ styles.menuItem } onClick={() => this.navItemClicked(current.name, current.key)}><a className={ isSelected ? styles.selectedNav : "" } href={`#${current.link}`}>{current.name}</a></div>);
 		}
 		return navs;
+	}
+
+	navItemClicked(categoryName, categoryId) {
+
+		this.props.menuOptionClickHandler(categoryId);
+		this.setState(() => { return { selectedCategory: categoryName } });
+
 	}
 
 	burgerToggle() {
@@ -66,12 +79,12 @@ class Menu extends Component {
 
 	componentDidMount() {
 		document.addEventListener("scroll", this.scroll.bind(this));
-		this.introPage = document.getElementById("introPage");
+		this.firstPage = document.getElementById("introPage");
 	}
 
 	scroll() {
 		let shouldCollapse = false;
-		if(window.scrollY > (this.introPage.offsetTop + this.introPage.offsetHeight - 300)) {
+		if(window.scrollY > (this.firstPage.offsetTop + this.firstPage.offsetHeight - 300)) {
 			shouldCollapse = true;
 		}
 		

@@ -117,7 +117,7 @@ temporalImages = [
 ];
 const Canhemon = createPageData( 9, "Canhemon", "canhemon", temporalImages,
 	[Techs.JS, Techs.HTML5, Techs.CSS3, Techs.Leaflet, Techs.Django, Techs.React ], [ Roles.BackendDeveloper, Roles.AppDeveloper ], 
-	[Categories.Web, Categories.App]
+	[Categories.WebApps, Categories.App]
 );
 
 //altersportgim.com, martacastro.net, triatloberga.cat, bergatrail, ...
@@ -133,7 +133,7 @@ temporalImages = [
 ];
 const Other = createPageData( 11, "Minor and ongoing projects", "rt", temporalImages,
 	[Techs.Arduino, Techs.NodeJS, Techs.Keras, Techs.Tensorflow, Techs.React, Techs.WebGL, Techs.OpenGL, Techs.JS, Techs.CPlusPlus, Techs.Python ], [ Roles.FullStackDeveloper, Roles.RenderingEngineer, Roles.LeadEngineer ], 
-	[Categories.Other]
+	[Categories.Other, Categories.CG]
 );
 
 
