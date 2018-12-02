@@ -24,7 +24,7 @@ class MainContent extends Component {
 					a precise mesh of 173 millions of triangles with and edge size of millimeters and <b>a set of user-friendly visualization tools.</b>.
 					The result was open to the public in MNAC from February to May 2008 and is now visible as part of its permanent exhibition. </p>
 					<p>Visitors of the exhibition interact with the virtual reproduction in an immersive <b>VR kiosk</b> using a touch-screen and a back-projection display screen with passive stereo. Visitors can simply navigate and zoom-in in different parts of the entrance, or they can get further information just 
-					by touching different hotspots that make 3D information boards appear in front of important components of the façade. A small video showing how it worked can be founf <Link href="https://www.youtube.com/watch?v=wBURyYXGse8">here</Link>.</p>
+					by touching different hotspots that make 3D information boards appear in front of important components of the façade. We published a <Link href="https://www.youtube.com/watch?v=wBURyYXGse8">video showing how everything worked</Link>.</p>
 					<p>I helped with the process of <b>repairing of holes</b> on the mesh resulting from the acquisition process implementing an algorithm to detect them and I was responsible for the implementation of the <b>custom stereo renderer</b> that was used to interactively inspect the mesh.</p>
 					<p>More information about the technical aspects of this project can be found on the following scientific papers:</p>
 					<ul>
@@ -35,12 +35,12 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 } >
 							<ImageWithText  
-									source="/files/rendering/portalada2.jpg" alt="Detail of the portalada"
+									source="/files/thumbs/rendering/portalada2.jpg" alt="Detail of the portalada"
 									text="Close detail of the Pantocrator in Ripoll Monastery entrance. You can see how even the rough surface was captured." />
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/rendering/portalada3.jpg" alt="Side view of the portalada" 
+									source="/files/thumbs/rendering/portalada3.jpg" alt="Side view of the portalada" 
 									text="Side view of the portalada." />
 						</div>
 					</div>
@@ -58,12 +58,12 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/rendering/tarraco1.jpg" alt="An NPC character" 
+									source="/files/thumbs/rendering/tarraco1.jpg" alt="An NPC character" 
 									text="An NPC character ready to ask us some questions." />
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/rendering/tarraco3.jpg" alt="Roman circus tribune" 
+									source="/files/thumbs/rendering/tarraco3.jpg" alt="Roman circus tribune" 
 									text="In-development visualization of the Roman circus tribune." />
 						</div>
 					</div>
@@ -80,22 +80,22 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/rendering/baip1.jpg" alt="A single tanker" 
+									source="/files/thumbs/rendering/baip1.jpg" alt="A single tanker" 
 									text="View of a single tanker." />
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/rendering/baip2.jpg" alt="Engine room" 
+									source="/files/thumbs/rendering/baip2.jpg" alt="Engine room" 
 									text="View of the engine room." />
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/rendering/baip3.jpg" alt="Boing rendering" 
+									source="/files/thumbs/rendering/baip3.jpg" alt="Boing rendering" 
 									text="Our renderer was also tested to inspect a Boeing plane." />
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/rendering/baip4.jpg" alt="Debug view of a group of tankers being rendered" 
+									source="/files/thumbs/rendering/baip4.jpg" alt="Debug view of a group of tankers being rendered" 
 									text="Debug view of a group of tankers being rendered. Each of them could be inspected." />
 						</div>
 					</div>
@@ -117,12 +117,12 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/af2.jpg" alt="Log your exercises" 
+									source="/files/thumbs/web/af2.jpg" alt="Log your exercises" 
 									text="Promotional image of the platform. The text reads 'Log your exercises'."/>
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/af1.jpg" alt="Trainer-facing website" 
+									source="/files/thumbs/web/af1.jpg" alt="Trainer-facing website" 
 									text="Promotional image of the platform. The text reads 'Your training on the cloud'."/>
 						</div>
 					</div>
@@ -142,12 +142,12 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/ba3.jpg" alt="Partial view of a route information" 
+									source="/files/thumbs/web/ba3.jpg" alt="Partial view of a route information" 
 									text="Partial view of a route information. On the right you can see the time it would take to follow this route depending on which kind of user you are and the route characteristics." />
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/ba2.jpg" alt="Landmarks view" 
+									source="/files/thumbs/web/ba2.jpg" alt="Landmarks view" 
 									text="The landmarks view screen" />
 						</div>
 					</div>
@@ -162,7 +162,7 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/iastracker1.jpg" alt="View of the map with the observations" 
+									source="/files/thumbs/web/iastracker1.jpg" alt="View of the map with the observations" 
 									text="The map with the observations as shown on the user-facing website." />
 						</div>
 					</div>
@@ -182,12 +182,12 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/cv1.jpg" alt="User preferences selection menu" 
+									source="/files/thumbs/web/cv1.jpg" alt="User preferences selection menu" 
 									text="The user would move the sliders indicating how much they valuated each concept." />
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/cv2.jpg" alt="View of the map with the results overprinted" 
+									source="/files/thumbs/web/cv2.jpg" alt="View of the map with the results overprinted" 
 									text="The map showing a semi transparent layer with the results of their mixed preferences." />
 						</div>
 					</div>
@@ -204,32 +204,32 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/instamaps4.jpg" alt="Start screen of Instamaps" 
+									source="/files/thumbs/web/instamaps4.jpg" alt="Start screen of Instamaps" 
 									text="Start screen of Instamaps." />
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/instamaps3.jpg" alt="Instamaps public gallery" 
+									source="/files/thumbs/web/instamaps3.jpg" alt="Instamaps public gallery" 
 									text="Instamaps public gallery." />
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/instamaps1.jpg" alt="A map made with Instamaps" 
+									source="/files/thumbs/web/instamaps1.jpg" alt="A map made with Instamaps" 
 									text="A map made with Instamaps." />
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/storymaps2.jpg" alt="A story map done with StoryMaps" 
+									source="/files/thumbs/web/storymaps2.jpg" alt="A story map done with StoryMaps" 
 									text="A story map done with StoryMaps." />
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/ullDelTemps.jpg" alt="One of our prototypes" 
+									source="/files/thumbs/web/ullDelTemps.jpg" alt="One of our prototypes" 
 									text="One of our prototypes. You can see the current orthophoto and an historical one superimposed. Geolocated images from ICGC's map library are also shown." />
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/ortoaugmentada.jpg" alt="Augmented orthophoto" 
+									source="/files/thumbs/web/ortoaugmentada.jpg" alt="Augmented orthophoto" 
 									text="One of our prototypes. We modified the orthophoto to make the relief stand out." />
 						</div>
 					</div>
@@ -238,16 +238,16 @@ class MainContent extends Component {
 					<p>It consisted of an Open Source <b>smartphone app</b> and the <b>back-end service</b> needed to support it. It was comissioned by the Joint Research Center of the European Comission and its goal was to create an App to check different aspects of trees.</p>
 					<p>The smartphone application was an <b>hybrid application</b> used <b>to send the observation of a tree</b>. One of the main functionalities was that the user could create areas of interest, the region to observe, to be used offline. System admins were able to create new zones and assign them to the users. They could afterwards see a list of their assigned zones and upload information about the trees there.</p>
 					<p>I was responsible for the <b>back-end implementation</b> and some small details of the <b>smartphone app</b>.</p>
-					<p>All the code created during the development of this project can be found on <Link href="https://github.com/jessisena/TreeCheckerApp">this</Link> public repository.</p>
+					<p>All the code created during the development of this project can be found on this <Link href="https://github.com/jessisena/TreeCheckerApp">public repository</Link>.</p>
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/canhemon1.jpg" alt="One of the steps of the starting guide" 
+									source="/files/thumbs/web/canhemon1.jpg" alt="One of the steps of the starting guide" 
 									text="One of the steps of the starting guide showing information about the areas of interest." />
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/canhemon2.jpg" alt="Information about an observation" 
+									source="/files/thumbs/web/canhemon2.jpg" alt="Information about an observation" 
 									text="Information about an observation." />
 						</div>
 					</div>
@@ -259,12 +259,12 @@ class MainContent extends Component {
 					<div className={ SharedStyles.row }>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/as.jpg" alt="Website example 1" 
+									source="/files/thumbs/web/as.jpg" alt="Website example 1" 
 									text="Website of a sport center." />
 						</div>
 						<div className= { SharedStyles.col1 }>
 							<ImageWithText  
-									source="/files/web/mc.jpg" alt="Website example 2" 
+									source="/files/thumbs/web/mc.jpg" alt="Website example 2" 
 									text="An artist website with a shop to build art pieces from." />
 						</div>
 					</div>
@@ -274,29 +274,29 @@ class MainContent extends Component {
 					<p>During all these years I've also been involved in the development of other projects. Here you can find a list of some of them and others I'm actively working on:</p>
 					<ul>
 						<li><b>3d cycling:</b> When working at <b>Alter Sport</b> I developed a 3d cycling prototype to attract people to our booth in business exhibitions. It's main components were a static bycicle with a speedometer connected to an Arduino board that computed the user cadence and transmitted it to a computer that played a 3d stereoscopic video created by us at the same pace.</li>
-						<li><b>vt-optimizer:</b> A tool to optimize Mapbox Vector Tiles in order to be more performant when displaying them on the web. You can read more about it <Link href="https://medium.com/@ibesora/a-data-driven-journey-through-vector-tile-optimization-4a1dbd4f3a27">here</Link>.</li>
+						<li><b>vt-optimizer:</b> A tool to optimize Mapbox Vector Tiles in order to be more performant when displaying them on the web. Read more about <Link href="https://medium.com/@ibesora/a-data-driven-journey-through-vector-tile-optimization-4a1dbd4f3a27">how vt-optimizer works in this medium article</Link>.</li>
 						<li><b>Algorithms:</b> A never-ending respository of algorithms in different programming languages in order to keep my algorithmic skills in good shape.</li>
-						<li><b>Udacity's Deep Learning nanodegree course notes:</b> When doing the Deep Learning nanodegree I started to write the course notes on a public repository. Since then I've updated them various times in order to collect all my knowledge on the subject in one place. You can find them <Link href="https://ibesora.github.io/udacity-deeplearning-notes/">here</Link>. The projects I did on the nanodegree can also be found there.</li>
-						<li><b>Ray tracer:</b> Following Peter Shirley's <Link href="https://www.amazon.com/dp/B01B5AODD8">Ray tracing in one weekend</Link> book, I implemented a WebGL ray tracer that runs via a fragment shader. In addition to the base implementation found in the book I've added some extra techniques like shadowing and area lights. You can find it <Link href="https://github.com/ibesora/webgl-raytracer">here</Link>.</li>
+						<li><b>Udacity's Deep Learning nanodegree course notes:</b> When doing the Deep Learning nanodegree I started to write the course notes on a public repository. Since then I've updated them various times in order to collect all my knowledge on the subject in one place. Follow this link <Link href="https://ibesora.github.io/udacity-deeplearning-notes/">to take a look at the course notes repository</Link>. The projects I did on the nanodegree can also be found there.</li>
+						<li><b>Ray tracer:</b> Following Peter Shirley's <Link href="https://www.amazon.com/dp/B01B5AODD8">Ray tracing in one weekend</Link> book, I implemented a WebGL ray tracer that runs via a fragment shader. In addition to the base implementation found in the book I've added some extra techniques like shadowing and area lights. Take a look <Link href="https://github.com/ibesora/webgl-raytracer">at the raytracer implementation respository</Link>.</li>
 						<li><b>PhD:</b> I'm a PhD candidate on the <Link href="https://www.virvig.eu">ViRVIG</Link> research group and I'm actively collaborating with them in a number of projects. My thesis is focused on urban city reconstruction.</li>
-						<div className={ SharedStyles.row }>
-							<div className= { SharedStyles.col1 }>
-								<ImageWithText  
-										source="/files/web/3dcycling.jpg" alt="3d cycling prototype" 
-										text="An user trying our 3d cycling prototype." />
-							</div>
-							<div className= { SharedStyles.col1 }>
-								<ImageWithText  
-										source="/files/rendering/depth1.jpg" alt="ViRVIG collaboration" 
-										text="Results of the work done with ViRVIG. Image of a paper describing a new method to repair facades." />
-							</div>
-							<div className= { SharedStyles.col1 }>
-								<ImageWithText  
-										source="/files/rendering/depth2.jpg" alt="ViRVIG collaboration" 
-										text="Results of the work done with ViRVIG. Image of a paper describing a new method to repair facades." />
-							</div>
-						</div>
 					</ul>
+					<div className={ SharedStyles.row }>
+						<div className= { SharedStyles.col1 }>
+							<ImageWithText  
+									source="/files/thumbs/web/3dcycling.jpg" alt="3d cycling prototype" 
+									text="An user trying our 3d cycling prototype." />
+						</div>
+						<div className= { SharedStyles.col1 }>
+							<ImageWithText  
+									source="/files/thumbs/rendering/depth1.jpg" alt="ViRVIG collaboration" 
+									text="Results of the work done with ViRVIG. Image of a paper describing a new method to repair facades." />
+						</div>
+						<div className= { SharedStyles.col1 }>
+							<ImageWithText  
+									source="/files/thumbs/rendering/depth2.jpg" alt="ViRVIG collaboration" 
+									text="Results of the work done with ViRVIG. Image of a paper describing a new method to repair facades." />
+						</div>
+					</div>
 				</Page>
 			</div>
 		);

@@ -49,7 +49,7 @@ class ResponsivePicture extends Component {
 				src={ last[imageDataKey] } 
 				className={this.props.imgClass} 
 				alt={this.props.alt}
-				style={ this.state.fullWidth ? {width:"100%"} : {}} 
+				style={ this.state.fullWidth ? {width:"100%", filter: "blur(25px)"} : {}} 
 				onLoad= { () => this.imageLoaded() }
 			/>);
 

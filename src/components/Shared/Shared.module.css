@@ -19,7 +19,7 @@
     margin-left: auto;
 	margin-right: auto;
 	flex-wrap: wrap;
-	color: grey;
+	color: black;
 }
 
 .title {
@@ -41,6 +41,10 @@
 
 .nowrap {
 	flex-wrap: nowrap;
+}
+
+.wrap {
+	flex-wrap: wrap;
 }
 
 .flex {
