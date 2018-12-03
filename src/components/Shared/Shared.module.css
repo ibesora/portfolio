@@ -82,6 +82,10 @@
 	float: right;
 }
 
+.floatLeft {
+	float: left;
+}
+
 .alignRight {
 	text-align: right;
 }
@@ -97,7 +101,8 @@
 }
 
 .smallWidth {
-	width: 400px;
+	max-width: 400px;
+	width: 70vw;
 }
 
 .fullWidth {
@@ -146,6 +151,10 @@
 
 .marginTop40 {
 	margin-top: 40px;
+}
+
+.margin10 {
+	margin: 10px;
 }
 
 .plusCursor {
