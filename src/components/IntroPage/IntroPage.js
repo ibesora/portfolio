@@ -10,7 +10,7 @@ class IntroPage extends Component {
 				<div className={ SharedStyles.section }>
 					<h1 className={ `${SharedStyles.title} ${SharedStyles.marginTop40}` }>A complete-and-up-to-date list of things I've worked on*</h1>
 					<div className={ `${SharedStyles.row} ${ SharedStyles.nowrap} ${SharedStyles.alignTop}` }>
-						<img className={ `${ SharedStyles.avatar } ${ SharedStyles.rounded} ${SharedStyles.col1}` } src="/files/me.jpg" alt="me" title="me"></img>
+						<img className={ `${ SharedStyles.avatar } ${ SharedStyles.rounded} ${SharedStyles.col1}` } src="files/me.jpg" alt="me" title="me"></img>
 						<div className= { SharedStyles.col3 }>
 							<p className= { SharedStyles.noTopMargin }>My name is Isaac and I'm from <a href="https://en.wikipedia.org/wiki/Berga" target="_blank" rel="noopener noreferrer">Berga</a>, a small town in the catalan side of the Pirenees. I have been working as a software engineer in various positions and industries since 2005: from developing a newspaper printing plant simulator to working with <b>web mapping</b> and <b>AR</b> through being a <b>researcher</b> in <a href="https://www.virvig.eu/" target="_blank" rel="noopener noreferrer">ViRVIG</a>, the <b>VR</b> research group at <a href="https://www.upc.edu/en?set_language=en" target="_blank" rel="noopener noreferrer">UPC</a>, funding my own startup, <b>Alter Sport</b>, and working on different European projects.</p>
 							<p>I'm mostly interested in <b>computer graphics</b>, <b>algorithms</b> and <b>web technologies</b> although nowadays I'm also drawn into <b>deep learning</b>.
@@ -23,7 +23,7 @@ class IntroPage extends Component {
 					<div className={ `${SharedStyles.row} ${SharedStyles.alignRight}` }>
 						<div className={ `${SharedStyles.fullWidth}` }>
 							<ImageWithText className={ `${ SharedStyles.largeImage } ${ SharedStyles.rounded}` } 
-								source="/files/Berga.jpg" alt="Berga" showAltAsTitle={true} alignRight={true}
+								source="files/Berga.jpg" alt="Berga" showAltAsTitle={true} alignRight={true}
 								text="Berga, the best hometown in the entire world - Pere López - CC BY-SA 3.0" 
 								noEnlarge
 								/>
