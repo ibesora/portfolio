@@ -21,7 +21,7 @@
 .header {
 	position: fixed;
 	top: 0px;
-	width: 100%;
+	width: 100vw;
 	border-bottom: 5px solid var(--primary-color);
 	height: 300px;
 }
@@ -68,8 +68,6 @@
 
 .menuContainer.collapsed {
 	top: 50px;
-	width: calc(100% - 220px);
-	left: 230px;
 }
 
 .burguerRight {
