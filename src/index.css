@@ -1,13 +1,13 @@
 @font-face { 
 	font-family: Karla; 
 	font-display: fallback; 
-	src: url('/files/fonts/Karla/Karla-Regular.ttf'); 
+	src: url('https://ibesora.github.io/portfolio/files/fonts/Karla/Karla-Regular.ttf'); 
 } 
 @font-face { 
 	font-family: Karla; 
 	font-display: fallback; 
 	font-weight: bold; 
-	src: url('/files/fonts/Karla/Karla-Bold.ttf');
+	src: url('https://ibesora.github.io/portfolio/files/fonts/Karla/Karla-Bold.ttf');
 }
 @font-face {
 	font-family: 'Montserrat';
