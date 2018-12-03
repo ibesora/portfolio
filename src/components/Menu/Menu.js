@@ -22,7 +22,7 @@ class Menu extends Component {
 				definitiveURL: "/files/header570.jpg"
 			}
 		];
-		this.state = { srcSet, alt: "background", collapseMenu: false, selectedCategory: "All" };
+		this.state = { srcSet, alt: "background", collapseMenu: false, selectedCategory: 0 };
 	}
 
 	render() {
@@ -48,23 +48,23 @@ class Menu extends Component {
 
 	renderNavItems() {
 		let index = 0;
-		const navs = [<div key={ index } className={ styles.menuItem } onClick={() => this.navItemClicked("All", 0)}><a className={ (this.state.selectedCategory === "All") ? styles.selectedNav : "" } href="#all">All</a></div>];
+		const navs = [<div key={ index } className={ styles.menuItem } onClick={() => this.navItemClicked(0)}><a className={ (this.state.selectedCategory === 0) ? styles.selectedNav : "" } href="#all">All</a></div>];
 		for(let categoryName in Categories) {
 			const current = Categories[categoryName];
 			if(current.invisible)
 				continue;
 
 			index++;
-			const isSelected = (current.name === this.state.selectedCategory);
-			navs.push(<div key={ index } className={ styles.menuItem } onClick={() => this.navItemClicked(current.name, current.key)}><a className={ isSelected ? styles.selectedNav : "" } href={`#${current.link}`}>{current.name}</a></div>);
+			const isSelected = (current.key === this.state.selectedCategory);
+			navs.push(<div key={ index } className={ styles.menuItem } onClick={() => this.navItemClicked(current.key)}><a className={ isSelected ? styles.selectedNav : "" } href={`#${current.link}`}>{current.name}</a></div>);
 		}
 		return navs;
 	}
 
-	navItemClicked(categoryName, categoryId) {
+	navItemClicked(categoryId) {
 
 		this.props.menuOptionClickHandler(categoryId);
-		this.setState(() => { return { selectedCategory: categoryName } });
+		this.setState(() => { return { selectedCategory: categoryId, collapseMenu: false } });
 
 	}
 
@@ -79,16 +79,25 @@ class Menu extends Component {
 
 	componentDidMount() {
 		document.addEventListener("scroll", this.scroll.bind(this));
-		this.firstPage = document.getElementById("introPage");
+		this.offsetPage = document.getElementById("introPage");
+	}
+
+	componentDidUpdate() {
+		this.offsetPage = document.getElementById("root").children[0].children[2];
 	}
 
 	scroll() {
+		const oldCollapseMenuStatus = this.state.collapseMenu;
 		let shouldCollapse = false;
-		if(window.scrollY > (this.firstPage.offsetTop + this.firstPage.offsetHeight - 300)) {
+		const offset = (this.state.selectedCategory === 0) ? this.offsetPage.offsetTop + this.offsetPage.offsetHeight : 300;
+
+		if(window.scrollY > ( offset - 300)) {
 			shouldCollapse = true;
 		}
 		
-		this.setState(() => { return { collapseMenu: shouldCollapse } });
+		if(oldCollapseMenuStatus !== shouldCollapse) {
+			this.setState(() => { return { collapseMenu: shouldCollapse } });
+		}
 
 	}
 
