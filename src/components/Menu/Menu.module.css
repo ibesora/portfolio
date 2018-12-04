@@ -48,7 +48,7 @@
 .logo.collapsed {
 	height: 80px;
 	margin-left: initial;
-	transform: translateX(-10%);
+	transform: translateX(-25%);
 }
 
 .logoContainer {
@@ -68,6 +68,8 @@
 
 .menuContainer.collapsed {
 	top: 50px;
+	margin-left: 200px;
+	width: 80vw;
 }
 
 .burguerRight {
@@ -124,5 +126,12 @@
 	
 	.navNarrow.collapsed {
 		display: block;
+		margin-left: 0px;
+		width: 100vw;
 	}
+
+	.logo.collapsed {
+		transform: translateX(-10%);
+	}
+
 }
