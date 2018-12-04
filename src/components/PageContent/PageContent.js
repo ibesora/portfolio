@@ -20,7 +20,7 @@ class PageContent extends Component {
 					</div>
 					<div className={ `${styles.techs} ${SharedStyles.leftMargin}` }>
 						<b className={ styles.techText }> Technologies used in this project </b>
-						<div className={ `${SharedStyles.flex} ${SharedStyles.wrap} ${SharedStyles.justifyCenter}` }>
+						<div className={ `${SharedStyles.flex} ${SharedStyles.wrap} ${SharedStyles.justifyCenter} ${SharedStyles.marginBottom40}` }>
 						{ this.renderUsedTechs(this.props.techUsed) }
 						</div>
 					</div>

@@ -110,11 +110,11 @@
 }
 
 .display {
-	display: block;
+	display: block !important;
 }
 
 .hide {
-	display: none;
+	display: none !important;
 }
 
 .inline {
@@ -153,8 +153,16 @@
 	margin-top: 40px;
 }
 
+.marginBottom40 {
+	margin-bottom: 40px;
+}
+
 .margin10 {
 	margin: 10px;
+}
+
+.marginRight25 {
+	margin-right: 25px;
 }
 
 .plusCursor {

@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import ResponsivePicture from '../ResponsivePicture/ResponsivePicture';
 import * as Categories from '../../data/categories.js';
+
+import SharedStyles from '../Shared/Shared.module.css';
 import styles from './Menu.module.css';
+
 
 class Menu extends Component {
 	constructor(props) {
@@ -27,7 +30,7 @@ class Menu extends Component {
 				definitiveURL: "files/header360.jpg"
 			}
 		];
-		this.state = { srcSet, alt: "background", collapseMenu: false, selectedCategory: 0 };
+		this.state = { srcSet, alt: "background", collapseMenu: false, collapsedMenuVisible: false, selectedCategory: 0 };
 	}
 
 	render() {
@@ -41,8 +44,8 @@ class Menu extends Component {
 				<nav>
 					<div className={ `${styles.menuContainer} ${styles.animated} ${styles.navWide} ${this.state.collapseMenu ? styles.collapsed : ''}` }>{ this.props.showNavItems && this.renderNavItems() }</div>
 					<div className={ `${styles.menuContainer} ${styles.animated} ${styles.navNarrow} ${this.state.collapseMenu ? styles.collapsed : ''}` }>
-						<i className={`fa fa-bars fa-2x ${this.state.collapseMenu ? styles.burguerRight : ''}`} onClick={this.burgerToggle}></i> <br />
-						<div className={styles.navNarrowLinks}>
+						<i className={`fa fa-bars fa-2x ${this.state.collapseMenu ? styles.burguerRight : ''}`} onClick={() => this.burgerToggle()}></i> <br />
+						<div className={` ${styles.navNarrowLinks} ${this.state.collapsedMenuVisible ? SharedStyles.display : SharedStyles.hide }`}>
 							{ this.props.showNavItems && this.renderNavItems() }
 						</div>
 					</div>
@@ -69,17 +72,12 @@ class Menu extends Component {
 	navItemClicked(categoryId) {
 
 		this.props.menuOptionClickHandler(categoryId);
-		this.setState(() => { return { selectedCategory: categoryId, collapseMenu: false } });
+		this.setState(() => { return { selectedCategory: categoryId, collapseMenu: false, collapsedMenuVisible: false } });
 
 	}
 
 	burgerToggle() {
-		let linksEl = document.querySelector(`.${styles.navNarrowLinks}`);
-		if (linksEl.style.display === 'block') {
-			linksEl.style.display = 'none';
-		} else {
-			linksEl.style.display = 'block';
-		}
+		this.setState(() => { return { collapsedMenuVisible: !this.state.collapsedMenuVisible } });
 	}
 
 	componentDidMount() {
