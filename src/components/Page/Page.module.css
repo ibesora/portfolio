@@ -1,0 +1,17 @@
+.parallax {
+	position: relative;
+	z-index: 1;
+	height: 450px;
+}
+
+.fixedImage {
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: hidden;
+}
